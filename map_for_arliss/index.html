@@ -15,28 +15,28 @@
             <div id="mapid" class="main-contents"></div>
             <div id="settings" class="main-contents">
                 <h2>Settings</h2>
-                <form action="post" name="form-settings">
+                <form onsubmit="return false;" id="form-settings">
                     <p>
                         <h3>Start point</h3>
-                        <span>Latitude:</span><input type="number" name="start-latitude" id=""><br>
-                        <span>Longtitude:</span><input type="number" name="start-longtitude" id="">
+                        <span>Latitude:</span><input type="text" name="start-latitude" id="start-latitude"><br>
+                        <span>Longtitude:</span><input type="text" name="start-longtitude" id="start-longtitude">
                     </p>
                     <p>
                         <h3>1st sampling point</h3>
-                        <span>Latitude:</span><input type="number" name="sampling-latitude-01" id=""><br>
-                        <span>Longtitude:</span><input type="number" name="sampling-longtitude-02" id="">
+                        <span>Latitude:</span><input type="text" name="sampling-latitude-01" id="sampling-latitude-01"><br>
+                        <span>Longtitude:</span><input type="text" name="sampling-longtitude-01" id="sampling-longtitude-01">
                     </p>
                     <p>
                         <h3>2nd sampling point</h3>
-                        <span>Latitude:</span><input type="number" name="sampling-latitude-02" id=""><br>
-                        <span>Longtitude:</span><input type="number" name="sampling-longtitude-02" id="">
+                        <span>Latitude:</span><input type="text" name="sampling-latitude-02" id="sampling-latitude-02"><br>
+                        <span>Longtitude:</span><input type="text" name="sampling-longtitude-02" id="sampling-longtitude-02">
                     </p>
                     <p>
                         <h3>Goal point</h3>
-                        <span>Latitude:</span><input type="number" name="goal-latitude" id=""><br>
-                        <span>Longtitude:</span><input type="number" name="goal-longtitude" id="">
+                        <span>Latitude:</span><input type="text" name="goal-latitude" id="goal-latitude"><br>
+                        <span>Longtitude:</span><input type="text" name="goal-longtitude" id="goal-longtitude">
                     </p>
-                    <button value="Visualize" onclick="submit();"></button>
+                    <button type="submit" onclick="updateCoordinates();">Visualize</button>
                 </form>
             </div>
         </div>

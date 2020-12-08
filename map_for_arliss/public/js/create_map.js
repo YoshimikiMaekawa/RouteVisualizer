@@ -21,25 +21,7 @@ L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
 }).addTo(mymap);
 
 // True Coordinate
-var startPoint = L.circle(startCoordinate, {
-    color: 'blue',
-    radius: 0.1
-}).addTo(mymap);
-
-var samplingPoint1 = L.circle(samplingCoordinate1, {
-    color: 'yellow',
-    radius: 0.1
-}).addTo(mymap);
-
-var samplingPoint2 = L.circle(samplingCoordinate2, {
-    color: 'green',
-    radius: 0.1
-}).addTo(mymap);
-
-var goalPoint = L.circle(goalCoordinate, {
-    color: 'red',
-    radius: 0.1
-}).addTo(mymap);
+repaintCoordinates();
 
 // Estimated Coordinate
 var samplingPoint1Estimate = L.circle(estimatedSamplingCoordinate1, {
@@ -106,7 +88,7 @@ $.getJSON("./geojson/arrow_point_azimuth.geojson", function(data) {
 });
 
 mymap.on('zoomstart', function(e){
-    vanishIcon();
+    rotationUpdate();
 });
 mymap.on('zoomend', function(e){
     rotationUpdate();
@@ -125,12 +107,33 @@ function rotationUpdate(){
     }
 }
 
-function vanishIcon(){
-    for(i = 0; i < markers.length; i++){
-        markers[i].opacity = 0;
-    }
+function updateCoordinates(){
+    startCoordinate = [document.getElementById("start-latitude").value, document.getElementById("start-longtitude").value];
+    samplingCoordinate1 = [document.getElementById("sampling-latitude-01").value, document.getElementById("sampling-longtitude-01").value];
+    samplingCoordinate2 = [document.getElementById("sampling-latitude-02").value, document.getElementById("sampling-longtitude-02").value];
+    goalCoordinate = [document.getElementById("goal-latitude").value, document.getElementById("goal-longtitude").value];
+    repaintCoordinates();
 }
 
-function updateCoordinates(){
+function repaintCoordinates(){
+    mymap.removeLayer();
+    L.circle(startCoordinate, {
+        color: 'blue',
+        radius: 0.1
+    }).addTo(mymap);
     
+    L.circle(samplingCoordinate1, {
+        color: 'yellow',
+        radius: 0.1
+    }).addTo(mymap);
+    
+    L.circle(samplingCoordinate2, {
+        color: 'green',
+        radius: 0.1
+    }).addTo(mymap);
+    
+    L.circle(goalCoordinate, {
+        color: 'red',
+        radius: 0.1
+    }).addTo(mymap);
 }
