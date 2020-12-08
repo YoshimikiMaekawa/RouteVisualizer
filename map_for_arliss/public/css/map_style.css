@@ -1,0 +1,17 @@
+body {
+    width: 100%;
+}
+
+.main-contents {
+    float: left;
+}
+
+#mapid {
+    width: 80%;
+    height: 100%;
+}
+
+#settings {
+    width: 20%;
+    height: 100%;
+}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Map for ARLISS</title>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <link rel="stylesheet" href="./css/map_style.css">
+    </head>
+    <body onload="rotationUpdate();">
+        <div id="main">
+            <div id="mapid" class="main-contents"></div>
+            <div id="settings" class="main-contents">
+                <h2>Settings</h2>
+                <form action="post" name="form-settings">
+                    <p>
+                        <h3>Start point</h3>
+                        <span>Latitude:</span><input type="number" name="start-latitude" id=""><br>
+                        <span>Longtitude:</span><input type="number" name="start-longtitude" id="">
+                    </p>
+                    <p>
+                        <h3>1st sampling point</h3>
+                        <span>Latitude:</span><input type="number" name="sampling-latitude-01" id=""><br>
+                        <span>Longtitude:</span><input type="number" name="sampling-longtitude-02" id="">
+                    </p>
+                    <p>
+                        <h3>2nd sampling point</h3>
+                        <span>Latitude:</span><input type="number" name="sampling-latitude-02" id=""><br>
+                        <span>Longtitude:</span><input type="number" name="sampling-longtitude-02" id="">
+                    </p>
+                    <p>
+                        <h3>Goal point</h3>
+                        <span>Latitude:</span><input type="number" name="goal-latitude" id=""><br>
+                        <span>Longtitude:</span><input type="number" name="goal-longtitude" id="">
+                    </p>
+                    <button value="Visualize" onclick="submit();"></button>
+                </form>
+            </div>
+        </div>
+        <script src="./js/create_map.js"></script>
+    </body>
+</html>
