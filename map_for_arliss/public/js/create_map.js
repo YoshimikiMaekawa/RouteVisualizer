@@ -1,4 +1,4 @@
-// ########################„Åì„Åì„Åã„Çâ‰ªªÊÑè„ÅÆË®≠ÂÆö########################
+// ########################Ç±Ç±Ç©ÇÁîCà”ÇÃê›íË########################
 // Ideal Coordinate
 let startCoordinate = [35.6433167, 139.5236433];
 let samplingCoordinate1 = [35.6432850, 139.5235217];
@@ -9,119 +9,86 @@ let goalCoordinate = [35.6431617, 139.5233283];
 let estimatedSamplingCoordinate1 = [35.6432717, 139.5235500];
 let estimatedSamplingCoordinate2 = [35.6432017, 139.5235450];
 let estimatedGoalCoordinate = [35.6431467, 139.5233483];
-// ########################„Åì„Åì„Åæ„Åß‰ªªÊÑè„ÅÆË®≠ÂÆö########################
+// ########################Ç±Ç±Ç‹Ç≈îCà”ÇÃê›íË########################
 
-// Map container
-let mymap;
-
+let map;
 // Japan map
 let japanMap = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
-    attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>Âú∞ÁêÜÈô¢„Çø„Ç§„É´</a>",
+    attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>ínóùâ@É^ÉCÉã</a>",
     maxZoom: 30,
     maxNativeZoom: 18
 });
-
+// World map
 let worldMap = L.tileLayer('http://{s}.tile.stamen.com/{variant}/{z}/{x}/{y}.png', {
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>',
     variant: 'toner-lite',
     maxZoom: 30,
     maxNativeZoom: 20
-})
-
-// Target points (start, sample01, sample02, goal)
-let targetPoints; repaintTargetPoints();
-let idealPath; repaintIdealPath();
-let realPath; repaintRealPath();
-let arrowMarkers;
-
-mymap = L.map('mapid', {
-    center: [35.658137599999996, 139.5392512],
-    zoom: 8,
-    layers: [worldMap, targetPoints, idealPath]
 });
 
-let baseMaps = {
-    "Japan": japanMap,
-    "World": worldMap
-}
-let overlayMaps = {
-    "Target points": targetPoints,
-    "Ideal path": idealPath,
-}
+function makeMap(){
+    $.getJSON('./geojson/real_path.geojson', (realPathData) => {
+        $.getJSON("./geojson/arrow_point_azimuth.geojson", (azimuthData) => {
+            $.getJSON("./geojson/arrow_point.geojson", (arrowPointData) => {
+                let targetPoints, idealPath, realPath, realPoints, arrows;
+                targetPoints = updateTargetPoints();
+                idealPath = updateIdealPath();
+                realPoints = updateRealPoints();
+                realPath = updateRealPath(realPathData);
+                arrows = updateArrows(arrowPointData, azimuthData);
 
-L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+                let baseMaps = {
+                    "Japan": japanMap,
+                    "World": worldMap
+                }
+                let overlayMaps = {
+                    "Target points": targetPoints,
+                    "Ideal path": idealPath,
+                    "Real points": realPoints,
+                    "Real path": realPath,
+                    "Direction": arrows,
+                }
 
-// Process in events
-mymap.on('zoomstart', function(e){
-    rotateArrow();
-});
-mymap.on('zoomend', function(e){
-    rotateArrow();
-});
-mymap.on('zoom', function(e){
-    rotateArrow();
-});
+                map = L.map('mapid', {
+                    center: [35.658137599999996, 139.5392512],
+                    zoom: 14,
+                    layers: [
+                        worldMap,
+                        targetPoints,
+                        idealPath,
+                        realPoints,
+                        realPath,
+                        arrows
+                    ]
+                });
 
-// Estimated Coordinate
-var samplingPoint1Estimate = L.circle(estimatedSamplingCoordinate1, {color: 'orange', radius: 0.1}).addTo(mymap);
-var samplingPoint2Estimate = L.circle(estimatedSamplingCoordinate2, {color: '#66cdaa', radius: 0.1}).addTo(mymap);
-var goalPointEstimate = L.circle(estimatedGoalCoordinate, {color: '#ffffff', radius: 0.1}).addTo(mymap);
+                L.control.layers(baseMaps, overlayMaps).addTo(map);
 
-var azimuths = [];
-$.getJSON("./geojson/arrow_point_azimuth.geojson", function(data) {
-    let i;
-    var azimuth = data.features[0].geometry.azimuth;
-    for(i = 0; i < azimuth.length; i++){
-        azimuths.push(azimuth[i]);
-    }
-});
-
-var markers = [];
-$.getJSON("./geojson/arrow_point.geojson", function(data) {
-    let i;
-    var points = data.features[0].geometry.coordinates;
-    for(i = 0; i < points.length; i++){
-        let arrowIcon = L.icon({
-            iconUrl: './figure/arrow01.png',
-            iconAnchor: [12, 50],
-            className: 'arrow-icon-' + i
+                // rotateArrows(arrows, azimuthData);
+                // map.on('zoomstart', function(e){rotateArrows(arrows, azimuthData);});
+                // map.on('zoomend', function(e){rotateArrows(arrows, azimuthData);});
+                // map.on('zoom', function(e){rotateArrows(arrows, azimuthData);});
+            });
         });
-        let marker = L.marker([points[i][1], points[i][0]], {
-            icon: arrowIcon
-        });
-        markers.push(marker);
-        marker.addTo(mymap);
-    }
-});
-
-function rotateArrow(){
-    let i;
-    for(i = 0; i < markers.length; i++){
-        var icon = document.getElementsByClassName('arrow-icon-' + i);
-        var translated3d = icon[0].style.transform;
-        var angle = azimuths[i] + 180;
-        icon[0].style.transform = translated3d + " rotate("+ angle +"deg)";
-        icon[0].style.transformOrigin = "50% 50%";
-    }
+    });
 }
 
-function updateCoordinates(){
-    startCoordinate = [document.getElementById("start-latitude").value, document.getElementById("start-longtitude").value];
-    samplingCoordinate1 = [document.getElementById("sampling-latitude-01").value, document.getElementById("sampling-longtitude-01").value];
-    samplingCoordinate2 = [document.getElementById("sampling-latitude-02").value, document.getElementById("sampling-longtitude-02").value];
-    goalCoordinate = [document.getElementById("goal-latitude").value, document.getElementById("goal-longtitude").value];
-    repaintTargetPoints();
-}
-
-function repaintTargetPoints(){
+function updateTargetPoints(){
     let start = L.circle(startCoordinate, {color: 'blue', radius: 0.1});
     let sample01 = L.circle(samplingCoordinate1, {color: 'yellow', radius: 0.1});
     let sample02 = L.circle(samplingCoordinate2, {color: 'green', radius: 0.1});
     let goal = L.circle(goalCoordinate, {color: 'red', radius: 0.1});
-    targetPoints = L.layerGroup([start, sample01, sample02, goal]);
+    return L.layerGroup([start, sample01, sample02, goal]);
 }
 
-function repaintIdealPath(){
+function updateRealPoints(){
+    let realSampling1 = L.circle(estimatedSamplingCoordinate1, {color: 'orange', radius: 0.1});
+    let realSampling2 = L.circle(estimatedSamplingCoordinate2, {color: '#66cdaa', radius: 0.1});
+    let realGoal = L.circle(estimatedGoalCoordinate, {color: '#000000', radius: 0.1});
+    return L.layerGroup([realSampling1, realSampling2, realGoal]);
+}
+
+function updateIdealPath(){
     let path = L.polyline([
         startCoordinate,
         samplingCoordinate1,
@@ -132,15 +99,46 @@ function repaintIdealPath(){
         "weight": 1,
         "opacity": 1
     });
-    idealPath = L.layerGroup([path]);
+    return L.layerGroup([path]);
 }
 
-function repaintRealPath(){ 
-    $.getJSON("./geojson/real_path.geojson", function (data) {
-        let path = L.geoJson(data,{
-            style: function(feature){
-                return {color: "#FF0000"};
-            }
-        }).addTo(mymap);
+function updateRealPath(data){
+    let path = L.geoJson(data,{
+        style: function(feature){
+            return {color: "#FF0000"};
+        }
     });
+    return L.layerGroup([path]);
+}
+
+function updateArrows(coordinate, azimuth){
+    let i;
+    let arrowLength = 0.00001;
+    let latlng = coordinate.features[0].geometry.coordinates;
+    let degree = azimuth.features[0].geometry.azimuth;
+    let arrows = [];
+    for(i = 0; i < latlng.length; i++){
+        let rotatedLat = latlng[i][1] - arrowLength * Math.sin(Math.PI / 180 * (degree[i] + 90));
+        let rotatedLng = latlng[i][0] + arrowLength * Math.cos(Math.PI / 180 * (degree[i] + 90));
+        let vector = L.polyline([
+            L.latLng(latlng[i][1], latlng[i][0]),
+            L.latLng(rotatedLat, rotatedLng)
+        ]);
+        let root = L.circle(L.latLng(latlng[i][1], latlng[i][0]), {radius: 0.1});
+        arrows.push(vector);
+        arrows.push(root);
+    }
+    return L.layerGroup(arrows); 
+}
+
+function rotateArrows(arrows, data){
+    let i;
+    let azimuth = data.features[0].geometry.azimuth;
+    for(i = 0; i < Object.keys(arrows._layers).length; i++){
+        let arrow = document.getElementsByClassName('arrow-icon-' + i);
+        let translated3d = arrow[0].style.transform;
+        let angle = azimuth[i] + 180;
+        arrow[0].style.transform = translated3d + " rotate("+ angle +"deg)";
+        arrow[0].style.transformOrigin = "50% 50%";
+    }
 }
