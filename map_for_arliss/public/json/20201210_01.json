@@ -4,38 +4,38 @@
 	"experimental_name": "20201210_01",
 	"setting": {
 		"start": {
-			"latitude": 0,
-			"longitude": 0
+			"latitude": 35.6431483,
+			"longitude": 139.5234133
 		},
 		"sub_goal": {
 			"latitude": [
-				0,
-				0
+				35.6432117,
+				35.6433983
 			],
 			"longitude": [
-				0,
-				0
+				139.5237517,
+				139.5238250
 			]
 		},
 		"goal": {
-			"latitude": 0,
-			"longitude": 0
+			"latitude": 35.6431483,
+			"longitude": 139.5231750
 		}
 	},
 	"log": {
 		"sub_goal": {
 			"latitude": [
-				0,
-				0
+				35.6431800,
+				35.6434033
 			],
 			"longitude": [
-				0,
-				0
+				139.5237567,
+				139.5238517
 			]
 		},
 		"goal": {
-			"latitude": 0,
-			"longitude": 0
+			"latitude": 35.6431600,
+			"longitude": 139.5231433
 		},
 		"time": [
 			"01:54:49",

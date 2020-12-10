@@ -1,16 +1,3 @@
-// ########################��������C�ӂ̐ݒ�########################
-// Ideal Coordinate
-let startCoordinate = [35.6433167, 139.5236433];
-let samplingCoordinate1 = [35.6432850, 139.5235217];
-let samplingCoordinate2 = [35.6431950, 139.5235183];
-let goalCoordinate = [35.6431617, 139.5233283];
-
-// Estimated Coordinate
-let estimatedSamplingCoordinate1 = [35.6432717, 139.5235500];
-let estimatedSamplingCoordinate2 = [35.6432017, 139.5235450];
-let estimatedGoalCoordinate = [35.6431467, 139.5233483];
-// ########################�����܂ŔC�ӂ̐ݒ�########################
-
 let map;
 // Japan map
 let japanMap = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
@@ -27,7 +14,8 @@ let worldMap = L.tileLayer('http://{s}.tile.stamen.com/{variant}/{z}/{x}/{y}.png
 });
 
 function makeMap(){
-    $.getJSON('./json/20201210_01.json', (log) => {
+    //20201210_01.json
+    $.getJSON('./json/20201117.json', (log) => {
         let targetPoints, idealPath, realPath, realPoints, arrows;
         targetPoints = updateTargetPoints(log);
         idealPath = updateIdealPath(log);
@@ -75,7 +63,7 @@ function updateIdealPath(data){
     let start = L.latLng(data.setting.start.latitude, data.setting.start.longitude);
     let sub01 = L.latLng(data.setting.sub_goal.latitude[0], data.setting.sub_goal.longitude[0]);
     let sub02 = L.latLng(data.setting.sub_goal.latitude[1], data.setting.sub_goal.longitude[1]);
-    let goal = L.latLng(data.log.goal.latitude, data.log.goal.longitude);
+    let goal = L.latLng(data.setting.goal.latitude, data.setting.goal.longitude);
     if(start.distanceTo(sub02) < start.distanceTo(sub01)){
         let temp = sub01;
         sub01 = sub02;
