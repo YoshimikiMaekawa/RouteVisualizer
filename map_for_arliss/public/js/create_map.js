@@ -31,7 +31,7 @@ function makeMap(){
         let targetPoints, idealPath, realPath, realPoints, arrows;
         targetPoints = updateTargetPoints(log);
         idealPath = updateIdealPath(log);
-        realPoints = updateRealPoints();
+        realPoints = updateRealPoints(log);
         realPath = updateRealPath(log);
         arrows = updateArrows(log);
 
@@ -64,19 +64,28 @@ function makeMap(){
 }
 
 function updateTargetPoints(data){
-    let start = L.circle(L.latLng(data.log.start.latitude, data.log.start.longitude), {color: 'blue', radius: 0.1});
-    let sample01 = L.circle(samplingCoordinate1, {color: 'yellow', radius: 0.1});
-    let sample02 = L.circle(samplingCoordinate2, {color: 'green', radius: 0.1});
-    let goal = L.circle(L.latLng(data.log.goal.latitude, data.log.goal.longitude), {color: 'red', radius: 0.1});
+    let start = L.circle(L.latLng(data.setting.start.latitude, data.setting.start.longitude), {color: 'blue', radius: 0.1});
+    let sample01 = L.circle(L.latLng(data.setting.sub_goal.latitude[0], data.setting.sub_goal.longitude[0]), {color: 'yellow', radius: 0.1});
+    let sample02 = L.circle(L.latLng(data.setting.sub_goal.latitude[1], data.setting.sub_goal.longitude[1]), {color: 'green', radius: 0.1});
+    let goal = L.circle(L.latLng(data.setting.goal.latitude, data.setting.goal.longitude), {color: 'red', radius: 0.1});
     return L.layerGroup([start, sample01, sample02, goal]);
 }
 
 function updateIdealPath(data){
+    let start = L.latLng(data.setting.start.latitude, data.setting.start.longitude);
+    let sub01 = L.latLng(data.setting.sub_goal.latitude[0], data.setting.sub_goal.longitude[0]);
+    let sub02 = L.latLng(data.setting.sub_goal.latitude[1], data.setting.sub_goal.longitude[1]);
+    let goal = L.latLng(data.log.goal.latitude, data.log.goal.longitude);
+    if(start.distanceTo(sub02) < start.distanceTo(sub01)){
+        let temp = sub01;
+        sub01 = sub02;
+        sub02 = temp;
+    }
     let path = L.polyline([
-        L.latLng(data.log.start.latitude, data.log.start.longitude),
-        samplingCoordinate1,
-        samplingCoordinate2,
-        L.latLng(data.log.goal.latitude, data.log.goal.longitude)
+        start,
+        sub01,
+        sub02,
+        goal
     ],{
         "color": "#0000FF",
         "weight": 1,
@@ -85,11 +94,11 @@ function updateIdealPath(data){
     return L.layerGroup([path]);
 }
 
-function updateRealPoints(){
-    let realSampling1 = L.circle(estimatedSamplingCoordinate1, {color: 'orange', radius: 0.1});
-    let realSampling2 = L.circle(estimatedSamplingCoordinate2, {color: '#66cdaa', radius: 0.1});
-    let realGoal = L.circle(estimatedGoalCoordinate, {color: '#000000', radius: 0.1});
-    return L.layerGroup([realSampling1, realSampling2, realGoal]);
+function updateRealPoints(data){
+    let sub01 = L.circle(L.latLng(data.log.sub_goal.latitude[0], data.log.sub_goal.longitude[0]), {color: 'orange', radius: 0.1});
+    let sub02 = L.circle(L.latLng(data.log.sub_goal.latitude[1], data.log.sub_goal.longitude[1]), {color: '#66cdaa', radius: 0.1});
+    let goal = L.circle(L.latLng(data.log.goal.latitude, data.log.goal.longitude), {color: '#000000', radius: 0.1});
+    return L.layerGroup([sub01, sub02, goal]);
 }
 
 function updateRealPath(data){

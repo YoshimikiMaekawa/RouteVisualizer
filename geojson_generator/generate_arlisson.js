@@ -4,6 +4,7 @@ let team = 'Hopes';
 let experimentalName = '20201210_01';
 let startLat = 0;
 let startLng = 0;
+let subGoalNumber = 2;
 let goalLat = 0;
 let goalLng = 0;
 
@@ -21,10 +22,60 @@ arlisson += '{\n';
 arlisson += '\t"date": "' + date + '",\n';
 arlisson += '\t"team": "' + team + '",\n';
 arlisson += '\t"experimental_name": "' + experimentalName + '",\n';
-arlisson += '\t"log": {\n';
+arlisson += '\t"setting": {\n';
 arlisson += '\t\t"start": {\n';
 arlisson += '\t\t\t"latitude": ' + startLat + ',\n';
 arlisson += '\t\t\t"longitude": ' + startLng + '\n';
+arlisson += '\t\t},\n';
+arlisson += '\t\t"sub_goal": {\n';
+arlisson += '\t\t\t"latitude": [\n';
+for(i = 0; i < subGoalNumber; i++){
+    arlisson += '\t\t\t\t' + 0;
+    if(i != subGoalNumber - 1){
+        arlisson += ',\n';
+    }else{
+        arlisson += '\n';
+    }
+}
+arlisson += '\t\t\t],\n';
+arlisson += '\t\t\t"longitude": [\n';
+for(i = 0; i < subGoalNumber; i++){
+    arlisson += '\t\t\t\t' + 0;
+    if(i != subGoalNumber - 1){
+        arlisson += ',\n';
+    }else{
+        arlisson += '\n';
+    }
+}
+arlisson += '\t\t\t]\n';
+arlisson += '\t\t},\n';
+arlisson += '\t\t"goal": {\n';
+arlisson += '\t\t\t"latitude": ' + goalLat + ',\n';
+arlisson += '\t\t\t"longitude": ' + goalLng + '\n';
+arlisson += '\t\t}\n';
+arlisson += '\t},\n';
+arlisson += '\t"log": {\n';
+arlisson += '\t\t"sub_goal": {\n';
+arlisson += '\t\t\t"latitude": [\n';
+for(i = 0; i < subGoalNumber; i++){
+    arlisson += '\t\t\t\t' + 0;
+    if(i != subGoalNumber - 1){
+        arlisson += ',\n';
+    }else{
+        arlisson += '\n';
+    }
+}
+arlisson += '\t\t\t],\n';
+arlisson += '\t\t\t"longitude": [\n';
+for(i = 0; i < subGoalNumber; i++){
+    arlisson += '\t\t\t\t' + 0;
+    if(i != subGoalNumber - 1){
+        arlisson += ',\n';
+    }else{
+        arlisson += '\n';
+    }
+}
+arlisson += '\t\t\t]\n';
 arlisson += '\t\t},\n';
 arlisson += '\t\t"goal": {\n';
 arlisson += '\t\t\t"latitude": ' + goalLat + ',\n';
@@ -39,9 +90,9 @@ for(i = 1; i < gpsLine.length - 1; i++){
     }else{
         arlisson += '\t\t\t"' + contents[0] + '"';
         if(i != gpsLine.length - 2){
-            arlisson += ',\n'
+            arlisson += ',\n';
         }else{
-            arlisson += '\n'
+            arlisson += '\n';
         }
     }
 }
@@ -52,9 +103,9 @@ for(i = startIdx; i < gpsLine.length - 1; i++){
     let contents = gpsLine[i].split(',');
     arlisson += '\t\t\t\t' + contents[2];
     if(i != gpsLine.length - 2){
-        arlisson += ',\n'
+        arlisson += ',\n';
     }else{
-        arlisson += '\n'
+        arlisson += '\n';
     }
 }
 arlisson += '\t\t\t],\n';
@@ -63,9 +114,9 @@ for(i = startIdx; i < gpsLine.length - 1; i++){
     let contents = gpsLine[i].split(',');
     arlisson += '\t\t\t\t' + contents[3];
     if(i != gpsLine.length - 2){
-        arlisson += ',\n'
+        arlisson += ',\n';
     }else{
-        arlisson += '\n'
+        arlisson += '\n';
     }
 }
 arlisson += '\t\t\t]\n';
@@ -75,9 +126,9 @@ for(i = startIdx; i < nineaxisLine.length - 1; i++){
     let contents = nineaxisLine[i].split(',');
     arlisson += '\t\t\t' + contents[18];
     if(i != nineaxisLine.length - 2){
-        arlisson += ',\n'
+        arlisson += ',\n';
     }else{
-        arlisson += '\n'
+        arlisson += '\n';
     }
 }
 arlisson += '\t\t]\n';
