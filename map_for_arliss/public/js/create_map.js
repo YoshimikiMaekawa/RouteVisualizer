@@ -36,8 +36,8 @@ function makeMap(){
         }
 
         map = L.map('mapid', {
-            center: [35.658137599999996, 139.5392512],
-            zoom: 14,
+            center: L.latLng(log.setting.start.latitude, log.setting.start.longitude),
+            zoom: 20,
             layers: [
                 worldMap,
                 targetPoints,
