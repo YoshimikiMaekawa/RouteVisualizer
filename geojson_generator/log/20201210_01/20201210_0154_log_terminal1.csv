@@ -1,0 +1,2847 @@
+GPS Sensor is Ready!
+Pressure Sensor is Ready!
+VIDEOIO ERROR: V4L: can't open camera by index 0
+Error: Unable to initialize camera
+Error: Failed to initialize LoRaRM92a! (cannot open '/dev/ttySOFT0')
+PoseJudgment: ( rollOverThresholdY: 0.65, rollOverThresholdZ: 10, turnOverThresholdX: 9999, turnOverThresholdZ: 0.8, standThresholdX: 0.9 )
+Log file: log/20201210_0154_log_nineaxis1.csv
+Log file: log/20201210_0154_log_gps1.csv
+Log file: log/20201210_0154_log_pressure1.csv
+Log file: log/20201210_0154_log_lora1.csv
+[33m    .  + ・ **  .   *  .  ++  . 
+    +    ▄▄               ▄▄   *  .
+   . *   ██    ▄▄   ▄▄    ██   +  
+     . + ██    ██   ██    ██  ・* . 
+   +.    ███████████████████    ** +  
+   +  .  ██    ██   ██    ██  .  + 
+  . **   ██    ▀▀   ▀▀    ██    * 
+  +      ▀▀               ▀▀  . + 
+    .*      +   *     .   *  ・ ++ 
+         █ █ █▀█ █▀█ █▀▀ █▀▀       
+         █▀█ █ █ █▀▀ █▀▀ ▀▀█       
+         ▀ ▀ ▀▀▀ ▀   ▀▀▀ ▀▀▀       
+         Leader: Yukiko Fukumoto   
+         Hard: Yoshimiki Maekawa   
+               Yusuke Maekawa    
+         Soft: Yohei Hayamizu    
+               Ryotaro Arai    
+         Circuit: Iko Nakari    
+ 
+         Designer: Yoshimiki Maekawa 
+         Writer: Iko Nakari   
+[0m[30m[46m    Takadama Lab.  ACTS 2020   [0m   
+
+alias 'ww' = 'motor 100'
+alias 'hh' = 'motor 0'
+alias 'ss' = 'motor -100'
+alias 'aa' = 'motor 0 100'
+alias 'dd' = 'motor 100 0'
+alias 'test' = 'start testing'
+alias 'wait' = 'start waiting'
+alias 'fall' = 'start falling'
+alias 'sepa' = 'start para_separating'
+alias 'navi' = 'start navigating'
+alias 'detect' = 'start goal_detecting'
+alias 'posetest' = 'start pose_detection_testing'
+alias 'lighttest' = 'start light_detection_testing'
+alias 'wake' = 'start waking'
+alias 'pidww' = 'magnet_pid drive'
+alias 'pidhh' = 'magnet_pid stop;motor 0'
+Waiting Mode :light, 1
+Wi-Fi has been stopped!
+LoRa has been stopped!
+[1m[01:54:48] [36mSequence: [32m'waiting'
+[0mTime: 01:54:48
+Light count: 0/10 (LOW)
+
+Time: 01:54:49
+Light count: 0/10 (LOW)
+
+Time: 01:54:50
+Light count: 0/10 (LOW)
+
+Time: 01:54:51
+Light count: 0/10 (LOW)
+
+Time: 01:54:52
+Light count: 0/10 (LOW)
+
+Time: 01:54:53
+Light count: 0/10 (LOW)
+
+Time: 01:54:54
+Light count: 0/10 (LOW)
+
+Time: 01:54:55
+Light count: 0/10 (LOW)
+
+Time: 01:54:56
+Light count: 0/10 (LOW)
+
+Time: 01:54:57
+Light count: 0/10 (LOW)
+
+Time: 01:54:58
+Light count: 0/10 (LOW)
+
+Time: 01:54:59
+Light count: 0/10 (LOW)
+
+Time: 01:55:00
+Light count: 0/10 (LOW)
+
+Time: 01:55:01
+Light count: 0/10 (LOW)
+
+Time: 01:55:02
+Light count: 0/10 (LOW)
+
+Time: 01:55:03
+Light count: 0/10 (LOW)
+
+Time: 01:55:04
+Light count: 0/10 (LOW)
+
+Time: 01:55:05
+Light count: 0/10 (LOW)
+
+Time: 01:55:07
+Light count: 0/10 (LOW)
+
+Time: 01:55:08
+Light count: 0/10 (LOW)
+
+Time: 01:55:09
+Light count: 0/10 (LOW)
+
+Time: 01:55:10
+Light count: 0/10 (LOW)
+
+Time: 01:55:11
+Light count: 0/10 (LOW)
+
+Time: 01:55:12
+Light count: 0/10 (LOW)
+
+Time: 01:55:13
+Light count: 0/10 (LOW)
+
+Time: 01:55:14
+Light count: 0/10 (LOW)
+
+Time: 01:55:15
+Light count: 0/10 (LOW)
+
+Time: 01:55:16
+Light count: 0/10 (LOW)
+
+Time: 01:55:17
+Light count: 0/10 (HIGH)
+
+Time: 01:55:18
+Light count: 1/10 (HIGH)
+
+Time: 01:55:19
+Light count: 2/10 (HIGH)
+
+Time: 01:55:20
+Light count: 3/10 (HIGH)
+
+Time: 01:55:21
+Light count: 4/10 (HIGH)
+
+Time: 01:55:22
+Light count: 5/10 (HIGH)
+
+Time: 01:55:23
+Light count: 6/10 (HIGH)
+
+Time: 01:55:24
+Light count: 7/10 (HIGH)
+
+Time: 01:55:25
+Light count: 8/10 (HIGH)
+
+Time: 01:55:26
+Light count: 9/10 (HIGH)
+
+Wi-Fi has been restarted!
+[1m[01:55:30] [36mSequence: [32m'falling'
+[0mTime: 01:55:31
+Pressure count: 1/10 (1011.78 hPa)
+Gyro count:     0/10
+GPS position:   35.6430900, 139.5233067
+
+Time: 01:55:32
+Pressure count: 2/10 (1011.641 hPa)
+Gyro count:     0/10
+GPS position:   35.6430883, 139.5233050
+
+Time: 01:55:34
+Pressure count: 3/10 (1011.238 hPa)
+Gyro count:     0/10
+GPS position:   35.6430883, 139.5233067
+
+Time: 01:55:35
+Pressure count: 4/10 (1011.209 hPa)
+Gyro count:     0/10
+GPS position:   35.6430883, 139.5233067
+
+Time: 01:55:36
+Pressure count: 5/10 (1011.31 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233083
+
+Time: 01:55:37
+Pressure count: 6/10 (1011.48 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:55:38
+Pressure count: 7/10 (1011.525 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:55:39
+Pressure count: 8/10 (1011.133 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:55:40
+Pressure count: 9/10 (1011.202 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:55:41
+Pressure count: 10/10 (1011.311 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:55:42
+Pressure count: 11/10 (1011.341 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:55:43
+Pressure count: 12/10 (1011.483 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233083
+
+Time: 01:55:44
+Pressure count: 13/10 (1011.405 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233083
+
+Time: 01:55:45
+Pressure count: 14/10 (1011.61 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233083
+
+Time: 01:55:46
+Pressure count: 15/10 (1011.716 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233100
+
+Time: 01:55:47
+Pressure count: 16/10 (1011.856 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233117
+
+Time: 01:55:48
+Pressure count: 17/10 (1011.679 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233133
+
+Time: 01:55:49
+Pressure count: 18/10 (1011.664 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233133
+
+Time: 01:55:50
+Pressure count: 19/10 (1011.865 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233150
+
+Time: 01:55:51
+Pressure count: 20/10 (1011.731 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233150
+
+Time: 01:55:52
+Pressure count: 21/10 (1011.775 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233150
+
+Time: 01:55:53
+Pressure count: 22/10 (1011.74 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233150
+
+Time: 01:55:54
+Pressure count: 23/10 (1011.714 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233133
+
+Time: 01:55:55
+Pressure count: 24/10 (1011.644 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233150
+
+Time: 01:55:56
+Pressure count: 25/10 (1011.776 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233150
+
+Time: 01:55:57
+Pressure count: 26/10 (1011.846 hPa)
+Gyro count:     0/10
+GPS position:   35.6430950, 139.5233133
+
+Time: 01:55:58
+Pressure count: 27/10 (1011.748 hPa)
+Gyro count:     0/10
+GPS position:   35.6430950, 139.5233133
+
+Time: 01:55:59
+Pressure count: 28/10 (1011.697 hPa)
+Gyro count:     0/10
+GPS position:   35.6430950, 139.5233117
+
+Time: 01:56:00
+Pressure count: 29/10 (1011.645 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233117
+
+Time: 01:56:01
+Pressure count: 30/10 (1011.777 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233100
+
+Time: 01:56:02
+Pressure count: 31/10 (1011.668 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233100
+
+Time: 01:56:03
+Pressure count: 32/10 (1011.83 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233083
+
+Time: 01:56:04
+Pressure count: 33/10 (1011.818 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:56:05
+Pressure count: 34/10 (1011.801 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:56:06
+Pressure count: 35/10 (1011.74 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:56:07
+Pressure count: 36/10 (1011.748 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233067
+
+Time: 01:56:08
+Pressure count: 37/10 (1011.732 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233083
+
+Time: 01:56:09
+Pressure count: 38/10 (1011.721 hPa)
+Gyro count:     1/10
+GPS position:   35.6430917, 139.5233100
+
+Time: 01:56:10
+Pressure count: 39/10 (1011.827 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233117
+
+Time: 01:56:11
+Pressure count: 40/10 (1011.738 hPa)
+Gyro count:     0/10
+GPS position:   35.6430917, 139.5233133
+
+Time: 01:56:12
+Pressure count: 41/10 (1011.748 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233133
+
+Time: 01:56:13
+Pressure count: 42/10 (1011.747 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233150
+
+Time: 01:56:14
+Pressure count: 43/10 (1011.766 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233150
+
+Time: 01:56:15
+Pressure count: 44/10 (1011.801 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233167
+
+Time: 01:56:16
+Pressure count: 45/10 (1011.792 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233167
+
+Time: 01:56:17
+Pressure count: 46/10 (1011.8 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233167
+
+Time: 01:56:18
+Pressure count: 47/10 (1011.678 hPa)
+Gyro count:     0/10
+GPS position:   35.6430933, 139.5233167
+
+Time: 01:56:19
+Pressure count: 48/10 (1011.74 hPa)
+Gyro count:     0/10
+GPS position:   35.6430950, 139.5233167
+
+Time: 01:56:20
+Pressure count: 49/10 (1011.565 hPa)
+Gyro count:     0/10
+GPS position:   35.6430967, 139.5233183
+
+Time: 01:56:21
+Pressure count: 50/10 (1011.734 hPa)
+Gyro count:     0/10
+GPS position:   35.6430983, 139.5233200
+
+Time: 01:56:22
+Pressure count: 51/10 (1011.55 hPa)
+Gyro count:     0/10
+GPS position:   35.6431000, 139.5233217
+
+Time: 01:56:23
+Pressure count: 52/10 (1011.544 hPa)
+Gyro count:     0/10
+GPS position:   35.6431017, 139.5233217
+
+Time: 01:56:24
+Pressure count: 53/10 (1011.617 hPa)
+Gyro count:     0/10
+GPS position:   35.6431017, 139.5233317
+
+Time: 01:56:25
+Pressure count: 54/10 (1011.776 hPa)
+Gyro count:     1/10
+GPS position:   35.6431050, 139.5233350
+
+Time: 01:56:26
+Pressure count: 55/10 (1011.846 hPa)
+Gyro count:     2/10
+GPS position:   35.6431100, 139.5233367
+
+Time: 01:56:27
+Pressure count: 56/10 (1011.863 hPa)
+Gyro count:     3/10
+GPS position:   35.6431167, 139.5233433
+
+Time: 01:56:28
+Pressure count: 57/10 (1011.898 hPa)
+Gyro count:     4/10
+GPS position:   35.6431183, 139.5233450
+
+Time: 01:56:29
+Pressure count: 58/10 (1011.967 hPa)
+Gyro count:     5/10
+GPS position:   35.6431183, 139.5233450
+
+Time: 01:56:30
+Pressure count: 59/10 (1011.905 hPa)
+Gyro count:     6/10
+GPS position:   35.6431250, 139.5233483
+
+Timeout!!
+[1m[01:56:31] [36mSequence: [32m'para_separating'
+[0mPara separating... (1/10)
+Para separating... (2/10)
+Para separating... (3/10)
+Para separating... (4/10)
+Para separating... (5/10)
+Para separating... (6/10)
+Para separating... (7/10)
+Para separating... (8/10)
+Para separating... (9/10)
+Para separating... (10/10)
+Para separating finished!
+[1m[01:57:01] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[01:57:01] [36mSequence: [32m'navigating' > 'magnet_calibrating' > 'waking'
+[0mWaking finished!
+[1m[01:57:03] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[01:57:03] [36mSequence: [32m'navigating' > 'magnet_calibrating' > 'waking'
+[0mWaking finished!
+[1m[01:57:05] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[01:57:05] [36mSequence: [32m'navigating' > 'magnet_calibrating' > 'waking_from_rollover'
+[0mWakingFromRollover(ACCEL_GRADUALLY): Motor forward (24 sec)
+[1m[01:57:07] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0mMagnetCalibrating: Turning right...
+MagnetCalibrating: Turning left...
+MagnetCalibrating: Turning stopped!
+min: (-32.55, -3.75, -42.15)
+max: (19.2, 46.8, -33.15)
+Command:
+nineaxis minmax -32.55 -3.75 -42.15 19.2 46.8 -33.15
+--------------------
+filtered min: (-28.05, -0.6, -41.25)
+filtered max: (14.55, 43.05, -36.75)
+Command:
+nineaxis minmax -28.05 -0.6 -41.25 14.55 43.05 -36.75
+MagnetCalibrating has been finished!
+[1m[01:57:19] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[01:57:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[01:57:19] [36mSequence: [32m'navigating'
+[0mTime: 01:57:19
+GPS: (35.6431483,139.5234133)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.023
+Current Azimuth: 298.069
+Goal Distance: 31.413 m
+
+Time: 01:57:20
+GPS: (35.6431500,139.5234150)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.293
+Current Azimuth: 15.650
+Goal Distance: 31.224 m
+
+Time: 01:57:21
+GPS: (35.6431500,139.5234150)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.293
+Current Azimuth: 73.742
+Goal Distance: 31.224 m
+
+Time: 01:57:22
+GPS: (35.6431500,139.5234150)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.293
+Current Azimuth: 75.982
+Goal Distance: 31.224 m
+
+Time: 01:57:23
+GPS: (35.6431500,139.5234167)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.232
+Current Azimuth: 84.396
+Goal Distance: 31.077 m
+
+Time: 01:57:24
+GPS: (35.6431517,139.5234183)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.506
+Current Azimuth: 92.524
+Goal Distance: 30.890 m
+
+Time: 01:57:25
+GPS: (35.6431500,139.5234217)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 77.045
+Current Azimuth: 93.927
+Goal Distance: 30.636 m
+
+Time: 01:57:26
+GPS: (35.6431467,139.5234233)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 76.304
+Current Azimuth: 102.507
+Goal Distance: 30.575 m
+
+Time: 01:57:27
+GPS: (35.6431467,139.5234250)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 76.237
+Current Azimuth: 104.626
+Goal Distance: 30.429 m
+
+Time: 01:57:28
+GPS: (35.6431433,139.5234233)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 75.630
+Current Azimuth: 102.150
+Goal Distance: 30.665 m
+
+Time: 01:57:29
+GPS: (35.6431417,139.5234233)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 75.295
+Current Azimuth: 100.924
+Goal Distance: 30.712 m
+
+Time: 01:57:30
+GPS: (35.6431383,139.5234250)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 74.553
+Current Azimuth: 96.516
+Goal Distance: 30.663 m
+
+Time: 01:57:31
+GPS: (35.6431367,139.5234283)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 74.065
+Current Azimuth: 93.693
+Goal Distance: 30.423 m
+
+Time: 01:57:32
+GPS: (35.6431333,139.5234317)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 73.231
+Current Azimuth: 94.905
+Goal Distance: 30.238 m
+
+Time: 01:57:33
+GPS: (35.6431317,139.5234350)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 72.726
+Current Azimuth: 96.451
+Goal Distance: 30.004 m
+
+Time: 01:57:34
+GPS: (35.6431317,139.5234383)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 72.554
+Current Azimuth: 94.528
+Goal Distance: 29.716 m
+
+Time: 01:57:35
+GPS: (35.6431283,139.5234417)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 71.692
+Current Azimuth: 87.986
+Goal Distance: 29.543 m
+
+Time: 01:57:36
+GPS: (35.6431267,139.5234450)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 71.162
+Current Azimuth: 92.224
+Goal Distance: 29.316 m
+
+Time: 01:57:38
+GPS: (35.6431267,139.5234483)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 70.970
+Current Azimuth: 100.084
+Goal Distance: 29.031 m
+
+Time: 01:57:39
+GPS: (35.6431250,139.5234517)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 70.426
+Current Azimuth: 101.070
+Goal Distance: 28.807 m
+
+Time: 01:57:40
+GPS: (35.6431250,139.5234517)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 70.426
+Current Azimuth: 103.155
+Goal Distance: 28.807 m
+
+Time: 01:57:41
+GPS: (35.6431233,139.5234600)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 69.556
+Current Azimuth: 91.512
+Goal Distance: 28.162 m
+
+Time: 01:57:42
+GPS: (35.6431233,139.5234633)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 69.340
+Current Azimuth: 86.440
+Goal Distance: 27.880 m
+
+Time: 01:57:43
+GPS: (35.6431233,139.5234667)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 69.119
+Current Azimuth: 93.970
+Goal Distance: 27.598 m
+
+Time: 01:57:44
+GPS: (35.6431233,139.5234700)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 68.893
+Current Azimuth: 98.760
+Goal Distance: 27.317 m
+
+Time: 01:57:45
+GPS: (35.6431233,139.5234700)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 68.893
+Current Azimuth: 103.028
+Goal Distance: 27.317 m
+
+Time: 01:57:46
+GPS: (35.6431217,139.5234800)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 67.817
+Current Azimuth: 108.875
+Goal Distance: 26.544 m
+
+Time: 01:57:47
+GPS: (35.6431200,139.5234833)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 67.195
+Current Azimuth: 113.283
+Goal Distance: 26.337 m
+
+Time: 01:57:48
+GPS: (35.6431200,139.5234867)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 66.938
+Current Azimuth: 109.248
+Goal Distance: 26.059 m
+
+Time: 01:57:49
+GPS: (35.6431183,139.5234917)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 66.163
+Current Azimuth: 108.517
+Goal Distance: 25.718 m
+
+Time: 01:57:50
+GPS: (35.6431183,139.5234917)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 66.163
+Current Azimuth: 98.941
+Goal Distance: 25.718 m
+
+Time: 01:57:51
+GPS: (35.6431167,139.5235000)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 65.080
+Current Azimuth: 113.861
+Goal Distance: 25.108 m
+
+Time: 01:57:52
+GPS: (35.6431150,139.5235050)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 64.251
+Current Azimuth: 107.914
+Goal Distance: 24.778 m
+
+Time: 01:57:53
+GPS: (35.6431133,139.5235100)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 63.398
+Current Azimuth: 100.906
+Goal Distance: 24.454 m
+
+Time: 01:57:54
+GPS: (35.6431117,139.5235150)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 62.524
+Current Azimuth: 100.294
+Goal Distance: 24.135 m
+
+Time: 01:57:55
+GPS: (35.6431117,139.5235217)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 61.848
+Current Azimuth: 96.727
+Goal Distance: 23.602 m
+
+Time: 01:57:56
+GPS: (35.6431133,139.5235250)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 61.901
+Current Azimuth: 91.170
+Goal Distance: 23.249 m
+
+Time: 01:57:57
+GPS: (35.6431133,139.5235300)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 61.367
+Current Azimuth: 83.300
+Goal Distance: 22.851 m
+
+Time: 01:57:58
+GPS: (35.6431133,139.5235350)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 60.813
+Current Azimuth: 86.162
+Goal Distance: 22.455 m
+
+Time: 01:57:59
+GPS: (35.6431167,139.5235400)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 61.084
+Current Azimuth: 87.245
+Goal Distance: 21.879 m
+
+Time: 01:58:00
+GPS: (35.6431167,139.5235450)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 60.501
+Current Azimuth: 85.756
+Goal Distance: 21.484 m
+
+Time: 01:58:01
+GPS: (35.6431167,139.5235500)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 59.896
+Current Azimuth: 86.482
+Goal Distance: 21.092 m
+
+Time: 01:58:02
+GPS: (35.6431183,139.5235533)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 59.921
+Current Azimuth: 90.380
+Goal Distance: 20.738 m
+
+Time: 01:58:03
+GPS: (35.6431200,139.5235583)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 59.734
+Current Azimuth: 85.731
+Goal Distance: 20.253 m
+
+Time: 01:58:04
+GPS: (35.6431217,139.5235617)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 59.758
+Current Azimuth: 87.261
+Goal Distance: 19.900 m
+
+Time: 01:58:05
+GPS: (35.6431233,139.5235683)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 59.332
+Current Azimuth: 88.496
+Goal Distance: 19.286 m
+
+Time: 01:58:06
+GPS: (35.6431250,139.5235717)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 59.349
+Current Azimuth: 96.115
+Goal Distance: 18.932 m
+
+Time: 01:58:07
+GPS: (35.6431250,139.5235767)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 58.637
+Current Azimuth: 97.953
+Goal Distance: 18.544 m
+
+Time: 01:58:08
+GPS: (35.6431267,139.5235817)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 58.393
+Current Azimuth: 107.152
+Goal Distance: 18.061 m
+
+Time: 01:58:09
+GPS: (35.6431283,139.5235850)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 58.392
+Current Azimuth: 105.918
+Goal Distance: 17.707 m
+
+Time: 01:58:10
+GPS: (35.6431283,139.5235867)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 58.135
+Current Azimuth: 97.745
+Goal Distance: 17.579 m
+
+Time: 01:58:11
+GPS: (35.6431300,139.5235900)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 58.130
+Current Azimuth: 100.377
+Goal Distance: 17.225 m
+
+Time: 01:58:12
+GPS: (35.6431300,139.5235917)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 57.863
+Current Azimuth: 94.560
+Goal Distance: 17.097 m
+
+Time: 01:58:13
+GPS: (35.6431317,139.5235950)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 57.852
+Current Azimuth: 93.855
+Goal Distance: 16.743 m
+
+Time: 01:58:14
+GPS: (35.6431350,139.5235983)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 58.392
+Current Azimuth: 101.972
+Goal Distance: 16.291 m
+
+Time: 01:58:15
+GPS: (35.6431350,139.5236033)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 57.538
+Current Azimuth: 94.434
+Goal Distance: 15.907 m
+
+Time: 01:58:16
+GPS: (35.6431367,139.5236083)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 57.218
+Current Azimuth: 103.075
+Goal Distance: 15.427 m
+
+Time: 01:58:17
+GPS: (35.6431367,139.5236117)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 56.601
+Current Azimuth: 102.977
+Goal Distance: 15.174 m
+
+Time: 01:58:18
+GPS: (35.6431350,139.5236167)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 55.048
+Current Azimuth: 96.246
+Goal Distance: 14.904 m
+
+Time: 01:58:19
+GPS: (35.6431350,139.5236217)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 54.027
+Current Azimuth: 89.600
+Goal Distance: 14.535 m
+
+Time: 01:58:20
+GPS: (35.6431367,139.5236250)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 53.918
+Current Azimuth: 91.129
+Goal Distance: 14.183 m
+
+Time: 01:58:21
+GPS: (35.6431383,139.5236300)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 53.431
+Current Azimuth: 83.919
+Goal Distance: 13.708 m
+
+Time: 01:58:22
+GPS: (35.6431383,139.5236333)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 52.667
+Current Azimuth: 96.541
+Goal Distance: 13.467 m
+
+Time: 01:58:23
+GPS: (35.6431350,139.5236383)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 50.222
+Current Azimuth: 86.482
+Goal Distance: 13.344 m
+
+Time: 01:58:24
+GPS: (35.6431350,139.5236417)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 49.379
+Current Azimuth: 78.445
+Goal Distance: 13.114 m
+
+Time: 01:58:25
+GPS: (35.6431333,139.5236467)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 47.444
+Current Azimuth: 84.164
+Goal Distance: 12.899 m
+
+Time: 01:58:26
+GPS: (35.6431333,139.5236517)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 46.050
+Current Azimuth: 93.999
+Goal Distance: 12.569 m
+
+Time: 01:58:27
+GPS: (35.6431317,139.5236567)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 43.979
+Current Azimuth: 87.637
+Goal Distance: 12.381 m
+
+Time: 01:58:28
+GPS: (35.6431317,139.5236617)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 42.434
+Current Azimuth: 85.756
+Goal Distance: 12.071 m
+
+Time: 01:58:29
+GPS: (35.6431317,139.5236650)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 41.359
+Current Azimuth: 81.655
+Goal Distance: 11.870 m
+
+Time: 01:58:30
+GPS: (35.6431333,139.5236717)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 39.691
+Current Azimuth: 74.716
+Goal Distance: 11.337 m
+
+Time: 01:58:31
+GPS: (35.6431350,139.5236750)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 39.099
+Current Azimuth: 69.696
+Goal Distance: 11.002 m
+
+Time: 01:58:32
+GPS: (35.6431367,139.5236783)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 38.471
+Current Azimuth: 65.311
+Goal Distance: 10.669 m
+
+Time: 01:58:33
+GPS: (35.6431367,139.5236833)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 36.519
+Current Azimuth: 64.675
+Goal Distance: 10.393 m
+
+Time: 01:58:34
+GPS: (35.6431383,139.5236883)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 35.065
+Current Azimuth: 84.770
+Goal Distance: 9.978 m
+
+Time: 01:58:35
+GPS: (35.6431450,139.5236933)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 35.418
+Current Azimuth: 72.455
+Goal Distance: 9.111 m
+
+Time: 01:58:36
+GPS: (35.6431450,139.5236933)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 35.418
+Current Azimuth: 57.204
+Goal Distance: 9.111 m
+
+Time: 01:58:37
+GPS: (35.6431550,139.5236950)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 39.099
+Current Azimuth: 51.531
+Goal Distance: 8.133 m
+
+Time: 01:58:38
+GPS: (35.6431583,139.5236967)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 39.964
+Current Azimuth: 41.365
+Goal Distance: 7.750 m
+
+Time: 01:58:39
+GPS: (35.6431583,139.5236967)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 39.964
+Current Azimuth: 40.861
+Goal Distance: 7.750 m
+
+Time: 01:58:41
+GPS: (35.6431700,139.5237000)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 45.215
+Current Azimuth: 23.976
+Goal Distance: 6.590 m
+
+Time: 01:58:42
+GPS: (35.6431717,139.5237000)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 46.384
+Current Azimuth: 37.017
+Goal Distance: 6.460 m
+
+Time: 01:58:43
+GPS: (35.6431733,139.5237000)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 47.598
+Current Azimuth: 57.984
+Goal Distance: 6.334 m
+
+Time: 01:58:44
+GPS: (35.6431767,139.5237033)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 48.290
+Current Azimuth: 62.385
+Goal Distance: 5.861 m
+
+Time: 01:58:45
+GPS: (35.6431767,139.5237033)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 48.290
+Current Azimuth: 63.820
+Goal Distance: 5.861 m
+
+Time: 01:58:46
+GPS: (35.6431800,139.5237083)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 48.029
+Current Azimuth: 67.110
+Goal Distance: 5.277 m
+
+Time: 01:58:47
+GPS: (35.6431817,139.5237117)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 47.288
+Current Azimuth: 74.269
+Goal Distance: 4.928 m
+
+Time: 01:58:48
+GPS: (35.6431833,139.5237150)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 46.435
+Current Azimuth: 82.030
+Goal Distance: 4.582 m
+
+Time: 01:58:49
+GPS: (35.6431833,139.5237183)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 43.708
+Current Azimuth: 80.337
+Goal Distance: 4.368 m
+
+Time: 01:58:50
+GPS: (35.6431833,139.5237183)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 43.708
+Current Azimuth: 79.111
+Goal Distance: 4.368 m
+
+Time: 01:58:51
+GPS: (35.6431883,139.5237250)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 42.879
+Current Azimuth: 75.357
+Goal Distance: 3.550 m
+
+Time: 01:58:52
+GPS: (35.6431883,139.5237300)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 37.041
+Current Azimuth: 66.525
+Goal Distance: 3.259 m
+
+Time: 01:58:53
+GPS: (35.6431817,139.5237400)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 17.567
+Current Azimuth: 66.298
+Goal Distance: 3.506 m
+
+Time: 01:58:54
+GPS: (35.6431750,139.5237417)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 12.526
+Current Azimuth: 61.920
+Goal Distance: 4.184 m
+
+Time: 01:58:55
+GPS: (35.6431717,139.5237433)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 9.640
+Current Azimuth: 59.250
+Goal Distance: 4.520 m
+
+Time: 01:58:56
+GPS: (35.6431767,139.5237400)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 15.185
+Current Azimuth: 58.428
+Goal Distance: 4.041 m
+
+Time: 01:58:57
+GPS: (35.6431767,139.5237400)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 15.185
+Current Azimuth: 73.841
+Goal Distance: 4.041 m
+
+Time: 01:58:58
+GPS: (35.6431767,139.5237417)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 13.102
+Current Azimuth: 53.336
+Goal Distance: 4.004 m
+
+Time: 01:58:59
+GPS: (35.6431800,139.5237433)
+target coord:(35.6432117,139.5237517)
+Target Azimuth: 12.106
+Current Azimuth: 56.193
+Goal Distance: 3.609 m
+
+[1m[01:59:00] [36mSequence: [32m'navigating' > 'detecting_surface'
+[0mDetecting surface subsequence has done!
+Sum of high frequency is 46.6
+Size of m_zAccelerations: 248
+The surface is GRASS!!
+[1m[01:59:15] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[01:59:15] [36mSequence: [32m'navigating' > 'detecting_surface'
+[0mDetecting surface subsequence has done!
+Sum of high frequency is 43.2
+Size of m_zAccelerations: 250
+The surface is GRASS!!
+[1m[01:59:30] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[01:59:30] [36mSequence: [32m'navigating' > 'detecting_surface'
+[0mDetecting surface subsequence has done!
+Sum of high frequency is 51.7
+Size of m_zAccelerations: 252
+The surface is SOIL!!
+[1m[01:59:45] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[01:59:45] [36mSequence: [32m'navigating' > 'sampling'
+[0mDone with sampling No.1
+[1m[01:59:57] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[01:59:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[01:59:57] [36mSequence: [32m'navigating'
+[0mTime: 01:59:58
+GPS: (35.6431800,139.5237567)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 14.272
+Current Azimuth: 317.231
+Goal Distance: 25.075 m
+
+Time: 01:59:59
+GPS: (35.6431800,139.5237583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 13.938
+Current Azimuth: 312.152
+Goal Distance: 25.038 m
+
+Time: 02:00:00
+GPS: (35.6431800,139.5237583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 13.938
+Current Azimuth: 341.519
+Goal Distance: 25.038 m
+
+Time: 02:00:01
+GPS: (35.6431833,139.5237583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 14.146
+Current Azimuth: 0.195
+Goal Distance: 24.678 m
+
+Time: 02:00:02
+GPS: (35.6431850,139.5237583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 14.252
+Current Azimuth: 15.954
+Goal Distance: 24.498 m
+
+Time: 02:00:03
+GPS: (35.6431883,139.5237617)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 13.773
+Current Azimuth: 15.366
+Goal Distance: 24.065 m
+
+Time: 02:00:04
+GPS: (35.6431933,139.5237633)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 13.739
+Current Azimuth: 23.235
+Goal Distance: 23.489 m
+
+Time: 02:00:05
+GPS: (35.6431933,139.5237633)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 13.739
+Current Azimuth: 34.833
+Goal Distance: 23.489 m
+
+Time: 02:00:06
+GPS: (35.6432000,139.5237700)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 12.702
+Current Azimuth: 36.978
+Goal Distance: 22.628 m
+
+Time: 02:00:07
+GPS: (35.6432050,139.5237717)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 12.638
+Current Azimuth: 36.696
+Goal Distance: 22.052 m
+
+Time: 02:00:08
+GPS: (35.6432067,139.5237750)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 11.971
+Current Azimuth: 34.191
+Goal Distance: 21.807 m
+
+Time: 02:00:09
+GPS: (35.6432083,139.5237783)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 11.290
+Current Azimuth: 44.039
+Goal Distance: 21.564 m
+
+Time: 02:00:10
+GPS: (35.6432083,139.5237783)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 11.290
+Current Azimuth: 54.726
+Goal Distance: 21.564 m
+
+Time: 02:00:11
+GPS: (35.6432100,139.5237883)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 8.992
+Current Azimuth: 39.455
+Goal Distance: 21.222 m
+
+Time: 02:00:12
+GPS: (35.6432117,139.5237900)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 8.665
+Current Azimuth: 31.309
+Goal Distance: 21.016 m
+
+Time: 02:00:13
+GPS: (35.6432117,139.5237933)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 7.851
+Current Azimuth: 23.439
+Goal Distance: 20.973 m
+
+Time: 02:00:14
+GPS: (35.6432133,139.5237950)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 7.509
+Current Azimuth: 27.280
+Goal Distance: 20.769 m
+
+Time: 02:00:15
+GPS: (35.6432150,139.5237950)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 7.576
+Current Azimuth: 28.927
+Goal Distance: 20.585 m
+
+Time: 02:00:16
+GPS: (35.6432133,139.5237933)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 7.921
+Current Azimuth: 34.377
+Goal Distance: 20.789 m
+
+Time: 02:00:17
+GPS: (35.6432133,139.5237983)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 6.682
+Current Azimuth: 46.687
+Goal Distance: 20.731 m
+
+Time: 02:00:18
+GPS: (35.6432150,139.5238000)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 6.325
+Current Azimuth: 35.803
+Goal Distance: 20.530 m
+
+Time: 02:00:19
+GPS: (35.6432167,139.5238017)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 5.960
+Current Azimuth: 29.007
+Goal Distance: 20.329 m
+
+Time: 02:00:20
+GPS: (35.6432183,139.5238033)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 5.588
+Current Azimuth: 33.517
+Goal Distance: 20.130 m
+
+Time: 02:00:21
+GPS: (35.6432217,139.5238067)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 4.821
+Current Azimuth: 33.907
+Goal Distance: 19.733 m
+
+Time: 02:00:22
+GPS: (35.6432250,139.5238083)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 4.469
+Current Azimuth: 38.896
+Goal Distance: 19.351 m
+
+Time: 02:00:23
+GPS: (35.6432317,139.5238100)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 4.184
+Current Azimuth: 40.240
+Goal Distance: 18.599 m
+
+Time: 02:00:24
+GPS: (35.6432367,139.5238117)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 3.835
+Current Azimuth: 35.220
+Goal Distance: 18.033 m
+
+Time: 02:00:25
+GPS: (35.6432400,139.5238117)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 3.916
+Current Azimuth: 23.639
+Goal Distance: 17.663 m
+
+Time: 02:00:26
+GPS: (35.6432450,139.5238150)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 3.034
+Current Azimuth: 28.430
+Goal Distance: 17.089 m
+
+Time: 02:00:27
+GPS: (35.6432500,139.5238183)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 2.092
+Current Azimuth: 25.799
+Goal Distance: 16.520 m
+
+Time: 02:00:28
+GPS: (35.6432567,139.5238233)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 0.548
+Current Azimuth: 37.969
+Goal Distance: 15.767 m
+
+Time: 02:00:29
+GPS: (35.6432617,139.5238283)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 358.864
+Current Azimuth: 38.399
+Goal Distance: 15.213 m
+
+Time: 02:00:30
+GPS: (35.6432683,139.5238317)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 357.613
+Current Azimuth: 38.246
+Goal Distance: 14.480 m
+
+Time: 02:00:31
+GPS: (35.6432767,139.5238333)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 356.813
+Current Azimuth: 40.781
+Goal Distance: 13.561 m
+
+Time: 02:00:32
+GPS: (35.6432817,139.5238383)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 354.692
+Current Azimuth: 36.255
+Goal Distance: 13.039 m
+
+Time: 02:00:33
+GPS: (35.6432900,139.5238417)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 352.871
+Current Azimuth: 34.778
+Goal Distance: 12.150 m
+
+Time: 02:00:34
+GPS: (35.6432950,139.5238433)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 351.793
+Current Azimuth: 28.121
+Goal Distance: 11.618 m
+
+Time: 02:00:35
+GPS: (35.6433017,139.5238450)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 350.452
+Current Azimuth: 28.085
+Goal Distance: 10.908 m
+
+Time: 02:00:36
+GPS: (35.6433100,139.5238467)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 348.723
+Current Azimuth: 24.163
+Goal Distance: 10.022 m
+
+Time: 02:00:37
+GPS: (35.6433183,139.5238483)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 346.660
+Current Azimuth: 21.562
+Goal Distance: 9.149 m
+
+Time: 02:00:38
+GPS: (35.6433250,139.5238500)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 344.508
+Current Azimuth: 29.368
+Goal Distance: 8.467 m
+
+Time: 02:00:39
+GPS: (35.6433300,139.5238500)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 343.434
+Current Azimuth: 27.335
+Goal Distance: 7.932 m
+
+Time: 02:00:40
+GPS: (35.6433333,139.5238500)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 342.634
+Current Azimuth: 26.405
+Goal Distance: 7.577 m
+
+Time: 02:00:41
+GPS: (35.6433367,139.5238517)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 340.627
+Current Azimuth: 14.623
+Goal Distance: 7.273 m
+
+Time: 02:00:42
+GPS: (35.6433400,139.5238533)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 338.449
+Current Azimuth: 17.069
+Goal Distance: 6.977 m
+
+Time: 02:00:43
+GPS: (35.6433433,139.5238550)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 336.081
+Current Azimuth: 19.419
+Goal Distance: 6.694 m
+
+Time: 02:00:44
+GPS: (35.6433450,139.5238550)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 335.420
+Current Azimuth: 10.105
+Goal Distance: 6.524 m
+
+Time: 02:00:45
+GPS: (35.6433483,139.5238583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 331.537
+Current Azimuth: 2.703
+Goal Distance: 6.326 m
+
+Time: 02:00:46
+GPS: (35.6433533,139.5238583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 328.935
+Current Azimuth: 1.288
+Goal Distance: 5.843 m
+
+Time: 02:00:47
+GPS: (35.6433583,139.5238583)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 325.872
+Current Azimuth: 354.724
+Goal Distance: 5.374 m
+
+Time: 02:00:48
+GPS: (35.6433617,139.5238567)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 324.912
+Current Azimuth: 348.592
+Goal Distance: 4.984 m
+
+Time: 02:00:49
+GPS: (35.6433650,139.5238567)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 322.303
+Current Azimuth: 351.422
+Goal Distance: 4.685 m
+
+Time: 02:00:50
+GPS: (35.6433700,139.5238567)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 317.718
+Current Azimuth: 355.472
+Goal Distance: 4.258 m
+
+Time: 02:00:51
+GPS: (35.6433733,139.5238550)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 315.682
+Current Azimuth: 352.354
+Goal Distance: 3.885 m
+
+Time: 02:00:52
+GPS: (35.6433767,139.5238550)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 311.584
+Current Azimuth: 349.155
+Goal Distance: 3.629 m
+
+Time: 02:00:53
+GPS: (35.6433800,139.5238533)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 308.477
+Current Azimuth: 342.985
+Goal Distance: 3.273 m
+
+Time: 02:00:54
+GPS: (35.6433850,139.5238517)
+target coord:(35.6433983,139.5238250)
+Target Azimuth: 301.538
+Current Azimuth: 345.889
+Goal Distance: 2.831 m
+
+[1m[02:00:55] [36mSequence: [32m'navigating' > 'detecting_surface'
+[0mDetecting surface subsequence has done!
+Sum of high frequency is 48.6
+Size of m_zAccelerations: 249
+The surface is GRASS!!
+[1m[02:01:10] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[02:01:11] [36mSequence: [32m'navigating' > 'sampling'
+[0mDone with sampling No.2
+[1m[02:01:23] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[02:01:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[02:01:23] [36mSequence: [32m'navigating'
+[0mTime: 02:01:23
+GPS: (35.6434033,139.5238517)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 245.119
+Current Azimuth: 208.158
+Goal Distance: 67.478 m
+
+[1m[02:01:23] [36mSequence: [32m'navigating' > 'sub_para_separating'
+[0m[1m[02:01:24] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[02:01:24] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[02:01:25] [36mSequence: [32m'navigating' > 'magnet_calibrating' > 'waking'
+[0mWaking finished!
+[1m[02:01:26] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0mMagnetCalibrating: Turning right...
+MagCalib stuck detection result: [ -- -- -- OK ] (azimuth:295)
+MagCalib stuck detection result: [ OK -- -- OK ] (azimuth:0.606)
+MagCalib stuck detection result: [ OK OK -- OK ] (azimuth:94.1)
+MagCalib stuck detection result: [ OK OK OK OK ] (azimuth:181)
+MagnetCalibrating: Turning left...
+MagnetCalibrating: Turning stopped!
+min: (-30.4, -4.5, -39.1)
+max: (18.6, 47.5, -26.2)
+Command:
+nineaxis minmax -30.4 -4.5 -39.1 18.6 47.5 -26.2
+--------------------
+filtered min: (-27.3, -0.3, -39.9)
+filtered max: (16.3, 44.2, -32.9)
+Command:
+nineaxis minmax -27.3 -0.3 -39.9 16.3 44.2 -32.9
+MagCalib stuck detection result: [ OK OK OK OK ]
+  ---> Rover is not stuck!
+MagnetCalibrating has been finished!
+[1m[02:01:38] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+Time: 02:01:38
+GPS: (35.6434083,139.5238533)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.746
+Current Azimuth: 291.430
+Goal Distance: 67.850 m
+
+Time: 02:01:39
+GPS: (35.6434083,139.5238533)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.746
+Current Azimuth: 277.551
+Goal Distance: 67.850 m
+
+Time: 02:01:41
+GPS: (35.6434100,139.5238533)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.604
+Current Azimuth: 281.378
+Goal Distance: 67.929 m
+
+Time: 02:01:42
+GPS: (35.6434100,139.5238500)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.495
+Current Azimuth: 270.203
+Goal Distance: 67.657 m
+
+Time: 02:01:43
+GPS: (35.6434117,139.5238467)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.242
+Current Azimuth: 274.901
+Goal Distance: 67.466 m
+
+Time: 02:01:44
+GPS: (35.6434117,139.5238417)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.075
+Current Azimuth: 267.780
+Goal Distance: 67.058 m
+
+Time: 02:01:45
+GPS: (35.6434117,139.5238417)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 244.075
+Current Azimuth: 272.675
+Goal Distance: 67.058 m
+
+Time: 02:01:46
+GPS: (35.6434133,139.5238283)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 243.472
+Current Azimuth: 286.643
+Goal Distance: 66.058 m
+
+Time: 02:01:47
+GPS: (35.6434133,139.5238233)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 243.296
+Current Azimuth: 287.634
+Goal Distance: 65.654 m
+
+Time: 02:01:48
+GPS: (35.6434167,139.5238183)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 242.828
+Current Azimuth: 283.371
+Goal Distance: 65.419 m
+
+Time: 02:01:49
+GPS: (35.6434167,139.5238133)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 242.646
+Current Azimuth: 282.007
+Goal Distance: 65.017 m
+
+Time: 02:01:50
+GPS: (35.6434167,139.5238133)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 242.646
+Current Azimuth: 278.070
+Goal Distance: 65.017 m
+
+Time: 02:01:51
+GPS: (35.6434167,139.5238017)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 242.212
+Current Azimuth: 269.013
+Goal Distance: 64.081 m
+
+[2K[0Gs[1C[2K[0Gsu[2C[2K[0Gsud[3C[2K[0Gsudo[4C[2K[0Gsudo [5C[2K[0Gsudo s[6C[2K[0Gsudo sy[7C[2K[0Gsudo sys[8C[2K[0Gsudo syst[9C[2K[0Gsudo syste[10C[2K[0Gsudo system[11C[2K[0Gsudo systemc[12C[2K[0Gsudo systemct[13C[2K[0Gsudo systemctl[14C[2K[0Gsudo systemctl [15C[2K[0Gsudo systemctl s[16C[2K[0Gsudo systemctl st[17C[2K[0Gsudo systemctl sto[18C[2K[0Gsudo systemctl stop[19C[2K[0Gsudo systemctl stop [20C[2K[0Gsudo systemctl stop r[21C[2K[0Gsudo systemctl stop ro[22C[2K[0Gsudo systemctl stop rov[23C[2K[0Gsudo systemctl stop rove[24C[2K[0Gsudo systemctl stop rover[25CTime: 02:01:52
+GPS: (35.6434167,139.5237950)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 241.959
+Current Azimuth: 274.696
+Goal Distance: 63.548 m
+
+Time: 02:01:53
+GPS: (35.6434167,139.5237883)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 241.701
+Current Azimuth: 268.635
+Goal Distance: 63.017 m
+
+Time: 02:01:54
+GPS: (35.6434167,139.5237833)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 241.505
+Current Azimuth: 266.301
+Goal Distance: 62.619 m
+
+Time: 02:01:55
+GPS: (35.6434150,139.5237783)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 241.456
+Current Azimuth: 265.683
+Goal Distance: 62.133 m
+
+Time: 02:01:56
+GPS: (35.6434150,139.5237717)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 241.188
+Current Azimuth: 263.716
+Goal Distance: 61.604 m
+
+Time: 02:01:57
+GPS: (35.6434133,139.5237667)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 241.136
+Current Azimuth: 263.048
+Goal Distance: 61.118 m
+
+Time: 02:01:58
+GPS: (35.6434133,139.5237600)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 240.861
+Current Azimuth: 264.227
+Goal Distance: 60.590 m
+
+Time: 02:01:59
+GPS: (35.6434133,139.5237550)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 240.651
+Current Azimuth: 265.735
+Goal Distance: 60.196 m
+
+Time: 02:02:00
+GPS: (35.6434117,139.5237483)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 240.522
+Current Azimuth: 266.953
+Goal Distance: 59.579 m
+
+Time: 02:02:01
+GPS: (35.6434100,139.5237433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 240.463
+Current Azimuth: 267.059
+Goal Distance: 59.094 m
+
+Time: 02:02:02
+GPS: (35.6434100,139.5237383)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 240.245
+Current Azimuth: 265.914
+Goal Distance: 58.701 m
+
+Time: 02:02:03
+GPS: (35.6434100,139.5237317)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 239.951
+Current Azimuth: 266.818
+Goal Distance: 58.178 m
+
+Time: 02:02:04
+GPS: (35.6434083,139.5237267)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 239.885
+Current Azimuth: 270.195
+Goal Distance: 57.694 m
+
+Time: 02:02:05
+GPS: (35.6434083,139.5237217)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 239.658
+Current Azimuth: 270.978
+Goal Distance: 57.303 m
+
+Time: 02:02:06
+GPS: (35.6434083,139.5237167)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 239.428
+Current Azimuth: 273.336
+Goal Distance: 56.913 m
+
+Time: 02:02:07
+GPS: (35.6434083,139.5237100)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 239.117
+Current Azimuth: 274.001
+Goal Distance: 56.395 m
+
+Time: 02:02:08
+GPS: (35.6434083,139.5237050)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 238.879
+Current Azimuth: 275.488
+Goal Distance: 56.007 m
+
+Time: 02:02:09
+GPS: (35.6434067,139.5237000)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 238.802
+Current Azimuth: 263.909
+Goal Distance: 55.524 m
+
+Time: 02:02:10
+GPS: (35.6434067,139.5236933)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 238.476
+Current Azimuth: 261.472
+Goal Distance: 55.009 m
+
+Time: 02:02:11
+GPS: (35.6434067,139.5236883)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 238.228
+Current Azimuth: 266.547
+Goal Distance: 54.624 m
+
+Time: 02:02:12
+GPS: (35.6434050,139.5236833)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 238.143
+Current Azimuth: 267.817
+Goal Distance: 54.142 m
+
+Time: 02:02:13
+GPS: (35.6434050,139.5236783)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 237.889
+Current Azimuth: 266.852
+Goal Distance: 53.758 m
+
+Time: 02:02:14
+GPS: (35.6434033,139.5236733)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 237.799
+Current Azimuth: 265.416
+Goal Distance: 53.276 m
+
+Time: 02:02:15
+GPS: (35.6434033,139.5236683)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 237.538
+Current Azimuth: 259.172
+Goal Distance: 52.894 m
+
+Time: 02:02:16
+GPS: (35.6434017,139.5236633)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 237.444
+Current Azimuth: 266.629
+Goal Distance: 52.413 m
+
+Time: 02:02:17
+GPS: (35.6434017,139.5236583)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 237.176
+Current Azimuth: 266.971
+Goal Distance: 52.032 m
+
+Time: 02:02:18
+GPS: (35.6434000,139.5236533)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 237.077
+Current Azimuth: 265.606
+Goal Distance: 51.552 m
+
+Time: 02:02:19
+GPS: (35.6433983,139.5236467)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.883
+Current Azimuth: 263.419
+Goal Distance: 50.945 m
+
+Time: 02:02:20
+GPS: (35.6433983,139.5236433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.697
+Current Azimuth: 264.198
+Goal Distance: 50.692 m
+
+Time: 02:02:21
+GPS: (35.6433967,139.5236400)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.685
+Current Azimuth: 259.412
+Goal Distance: 50.339 m
+
+Time: 02:02:22
+GPS: (35.6433950,139.5236367)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.673
+Current Azimuth: 256.801
+Goal Distance: 49.985 m
+
+Time: 02:02:23
+GPS: (35.6433933,139.5236317)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.565
+Current Azimuth: 258.213
+Goal Distance: 49.505 m
+
+Time: 02:02:24
+GPS: (35.6433933,139.5236267)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.274
+Current Azimuth: 256.842
+Goal Distance: 49.128 m
+
+Time: 02:02:25
+GPS: (35.6433917,139.5236233)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 236.258
+Current Azimuth: 259.647
+Goal Distance: 48.774 m
+
+Time: 02:02:26
+GPS: (35.6433917,139.5236183)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 235.961
+Current Azimuth: 258.517
+Goal Distance: 48.399 m
+
+Time: 02:02:27
+GPS: (35.6433900,139.5236133)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 235.842
+Current Azimuth: 256.261
+Goal Distance: 47.920 m
+
+Time: 02:02:28
+GPS: (35.6433900,139.5236100)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 235.639
+Current Azimuth: 247.493
+Goal Distance: 47.671 m
+
+Time: 02:02:29
+GPS: (35.6433883,139.5236033)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 235.411
+Current Azimuth: 252.098
+Goal Distance: 47.069 m
+
+Time: 02:02:30
+GPS: (35.6433883,139.5236000)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 235.201
+Current Azimuth: 267.829
+Goal Distance: 46.821 m
+
+Time: 02:02:31
+GPS: (35.6433867,139.5235967)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 235.177
+Current Azimuth: 269.029
+Goal Distance: 46.468 m
+
+Time: 02:02:32
+GPS: (35.6433867,139.5235917)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 234.856
+Current Azimuth: 266.301
+Goal Distance: 46.097 m
+
+Time: 02:02:33
+GPS: (35.6433867,139.5235867)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 234.530
+Current Azimuth: 266.726
+Goal Distance: 45.728 m
+
+Time: 02:02:34
+GPS: (35.6433867,139.5235800)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 234.086
+Current Azimuth: 264.471
+Goal Distance: 45.238 m
+
+Time: 02:02:35
+GPS: (35.6433867,139.5235750)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 233.748
+Current Azimuth: 263.215
+Goal Distance: 44.873 m
+
+Time: 02:02:36
+GPS: (35.6433833,139.5235650)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 233.440
+Current Azimuth: 261.633
+Goal Distance: 43.924 m
+
+Time: 02:02:37
+GPS: (35.6433833,139.5235600)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 233.086
+Current Azimuth: 254.862
+Goal Distance: 43.561 m
+
+Time: 02:02:38
+GPS: (35.6433817,139.5235550)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 232.922
+Current Azimuth: 255.066
+Goal Distance: 43.089 m
+
+Time: 02:02:39
+GPS: (35.6433817,139.5235550)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 232.922
+Current Azimuth: 257.619
+Goal Distance: 43.089 m
+
+Time: 02:02:41
+GPS: (35.6433800,139.5235450)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 232.383
+Current Azimuth: 264.266
+Goal Distance: 42.257 m
+
+Time: 02:02:42
+GPS: (35.6433800,139.5235400)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 232.005
+Current Azimuth: 257.989
+Goal Distance: 41.899 m
+
+Time: 02:02:43
+GPS: (35.6433783,139.5235350)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 231.823
+Current Azimuth: 258.732
+Goal Distance: 41.429 m
+
+Time: 02:02:44
+GPS: (35.6433783,139.5235300)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 231.433
+Current Azimuth: 257.406
+Goal Distance: 41.074 m
+
+Time: 02:02:45
+GPS: (35.6433783,139.5235300)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 231.433
+Current Azimuth: 267.559
+Goal Distance: 41.074 m
+
+Time: 02:02:46
+GPS: (35.6433783,139.5235217)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 230.767
+Current Azimuth: 269.403
+Goal Distance: 40.488 m
+
+Time: 02:02:47
+GPS: (35.6433767,139.5235167)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 230.564
+Current Azimuth: 260.981
+Goal Distance: 40.020 m
+
+Time: 02:02:48
+GPS: (35.6433767,139.5235117)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 230.149
+Current Azimuth: 254.339
+Goal Distance: 39.672 m
+
+Time: 02:02:49
+GPS: (35.6433750,139.5235067)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 229.933
+Current Azimuth: 246.687
+Goal Distance: 39.206 m
+
+Time: 02:02:50
+GPS: (35.6433750,139.5235067)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 229.933
+Current Azimuth: 255.060
+Goal Distance: 39.206 m
+
+Time: 02:02:51
+GPS: (35.6433750,139.5234983)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 229.213
+Current Azimuth: 257.009
+Goal Distance: 38.632 m
+
+Time: 02:02:52
+GPS: (35.6433733,139.5234933)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 228.981
+Current Azimuth: 258.063
+Goal Distance: 38.169 m
+
+Time: 02:02:53
+GPS: (35.6433733,139.5234883)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 228.531
+Current Azimuth: 261.580
+Goal Distance: 37.829 m
+
+Time: 02:02:54
+GPS: (35.6433717,139.5234833)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 228.285
+Current Azimuth: 259.725
+Goal Distance: 37.367 m
+
+Time: 02:02:55
+GPS: (35.6433717,139.5234833)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 228.285
+Current Azimuth: 263.754
+Goal Distance: 37.367 m
+
+Time: 02:02:56
+GPS: (35.6433717,139.5234733)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 227.345
+Current Azimuth: 262.017
+Goal Distance: 36.697 m
+
+Time: 02:02:57
+GPS: (35.6433717,139.5234700)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 227.024
+Current Azimuth: 259.733
+Goal Distance: 36.476 m
+
+Time: 02:02:58
+GPS: (35.6433717,139.5234650)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 226.535
+Current Azimuth: 260.832
+Goal Distance: 36.146 m
+
+Time: 02:02:59
+GPS: (35.6433717,139.5234600)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 226.038
+Current Azimuth: 255.959
+Goal Distance: 35.819 m
+
+Time: 02:03:00
+GPS: (35.6433700,139.5234550)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 225.745
+Current Azimuth: 256.261
+Goal Distance: 35.365 m
+
+Time: 02:03:01
+GPS: (35.6433700,139.5234500)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 225.229
+Current Azimuth: 260.486
+Goal Distance: 35.043 m
+
+Time: 02:03:02
+GPS: (35.6433700,139.5234450)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 224.704
+Current Azimuth: 260.167
+Goal Distance: 34.723 m
+
+Time: 02:03:03
+GPS: (35.6433683,139.5234400)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 224.384
+Current Azimuth: 257.984
+Goal Distance: 34.273 m
+
+Time: 02:03:04
+GPS: (35.6433683,139.5234350)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 223.839
+Current Azimuth: 255.524
+Goal Distance: 33.958 m
+
+Time: 02:03:05
+GPS: (35.6433667,139.5234317)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 223.687
+Current Azimuth: 252.848
+Goal Distance: 33.616 m
+
+Time: 02:03:06
+GPS: (35.6433667,139.5234267)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 223.125
+Current Azimuth: 260.604
+Goal Distance: 33.305 m
+
+Time: 02:03:07
+GPS: (35.6433650,139.5234217)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 222.770
+Current Azimuth: 268.602
+Goal Distance: 32.861 m
+
+Time: 02:03:08
+GPS: (35.6433650,139.5234167)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 222.186
+Current Azimuth: 255.889
+Goal Distance: 32.556 m
+
+Time: 02:03:09
+GPS: (35.6433650,139.5234117)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 221.590
+Current Azimuth: 249.843
+Goal Distance: 32.254 m
+
+Time: 02:03:10
+GPS: (35.6433650,139.5234083)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 221.187
+Current Azimuth: 263.437
+Goal Distance: 32.054 m
+
+Time: 02:03:11
+GPS: (35.6433633,139.5234033)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 220.792
+Current Azimuth: 257.994
+Goal Distance: 31.618 m
+
+Time: 02:03:12
+GPS: (35.6433633,139.5233983)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 220.165
+Current Azimuth: 267.569
+Goal Distance: 31.324 m
+
+Time: 02:03:13
+GPS: (35.6433617,139.5233933)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 219.746
+Current Azimuth: 248.192
+Goal Distance: 30.891 m
+
+Time: 02:03:14
+GPS: (35.6433617,139.5233900)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 219.313
+Current Azimuth: 247.273
+Goal Distance: 30.699 m
+
+Time: 02:03:15
+GPS: (35.6433600,139.5233850)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 218.873
+Current Azimuth: 234.599
+Goal Distance: 30.270 m
+
+Time: 02:03:16
+GPS: (35.6433583,139.5233817)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 218.647
+Current Azimuth: 252.891
+Goal Distance: 29.937 m
+
+Time: 02:03:17
+GPS: (35.6433550,139.5233767)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 218.410
+Current Azimuth: 238.880
+Goal Distance: 29.365 m
+
+Time: 02:03:18
+GPS: (35.6433533,139.5233733)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 218.171
+Current Azimuth: 252.521
+Goal Distance: 29.032 m
+
+Time: 02:03:19
+GPS: (35.6433517,139.5233700)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 217.927
+Current Azimuth: 258.690
+Goal Distance: 28.700 m
+
+Time: 02:03:20
+GPS: (35.6433500,139.5233650)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 217.435
+Current Azimuth: 252.559
+Goal Distance: 28.277 m
+
+Time: 02:03:21
+GPS: (35.6433483,139.5233600)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 216.928
+Current Azimuth: 249.900
+Goal Distance: 27.856 m
+
+Time: 02:03:22
+GPS: (35.6433483,139.5233550)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 216.177
+Current Azimuth: 254.045
+Goal Distance: 27.586 m
+
+Time: 02:03:23
+GPS: (35.6433467,139.5233517)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 215.896
+Current Azimuth: 248.678
+Goal Distance: 27.259 m
+
+Time: 02:03:24
+GPS: (35.6433450,139.5233467)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 215.346
+Current Azimuth: 244.467
+Goal Distance: 26.845 m
+
+Time: 02:03:25
+GPS: (35.6433417,139.5233417)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 215.009
+Current Azimuth: 235.316
+Goal Distance: 26.281 m
+
+Time: 02:03:26
+GPS: (35.6433400,139.5233367)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 214.425
+Current Azimuth: 227.656
+Goal Distance: 25.871 m
+
+Time: 02:03:27
+GPS: (35.6433367,139.5233317)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 214.055
+Current Azimuth: 241.557
+Goal Distance: 25.309 m
+
+Time: 02:03:28
+GPS: (35.6433350,139.5233283)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 213.720
+Current Azimuth: 236.032
+Goal Distance: 24.987 m
+
+Time: 02:03:29
+GPS: (35.6433317,139.5233250)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 213.615
+Current Azimuth: 239.649
+Goal Distance: 24.511 m
+
+Time: 02:03:30
+GPS: (35.6433300,139.5233200)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 212.964
+Current Azimuth: 243.507
+Goal Distance: 24.108 m
+
+Time: 02:03:31
+GPS: (35.6433267,139.5233150)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 212.532
+Current Azimuth: 240.189
+Goal Distance: 23.551 m
+
+Time: 02:03:32
+GPS: (35.6433250,139.5233117)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 212.151
+Current Azimuth: 236.017
+Goal Distance: 23.233 m
+
+Time: 02:03:33
+GPS: (35.6433217,139.5233067)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 211.683
+Current Azimuth: 233.261
+Goal Distance: 22.679 m
+
+Time: 02:03:34
+GPS: (35.6433200,139.5233033)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 211.275
+Current Azimuth: 235.018
+Goal Distance: 22.363 m
+
+Time: 02:03:35
+GPS: (35.6433183,139.5232983)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 210.518
+Current Azimuth: 231.125
+Goal Distance: 21.972 m
+
+Time: 02:03:36
+GPS: (35.6433150,139.5232950)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 210.328
+Current Azimuth: 227.399
+Goal Distance: 21.499 m
+
+Time: 02:03:37
+GPS: (35.6433117,139.5232900)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 209.772
+Current Azimuth: 230.343
+Goal Distance: 20.951 m
+
+Time: 02:03:38
+GPS: (35.6433100,139.5232867)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 209.301
+Current Azimuth: 231.697
+Goal Distance: 20.641 m
+
+Time: 02:03:39
+GPS: (35.6433083,139.5232833)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 208.816
+Current Azimuth: 233.464
+Goal Distance: 20.332 m
+
+Time: 02:03:40
+GPS: (35.6433017,139.5232750)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 207.918
+Current Azimuth: 235.314
+Goal Distance: 19.321 m
+
+Time: 02:03:41
+GPS: (35.6433017,139.5232750)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 207.918
+Current Azimuth: 233.857
+Goal Distance: 19.321 m
+
+Time: 02:03:42
+GPS: (35.6432967,139.5232667)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 206.661
+Current Azimuth: 238.179
+Goal Distance: 18.481 m
+
+Time: 02:03:43
+GPS: (35.6432950,139.5232617)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 205.646
+Current Azimuth: 234.889
+Goal Distance: 18.115 m
+
+Time: 02:03:44
+GPS: (35.6432950,139.5232617)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 205.646
+Current Azimuth: 234.333
+Goal Distance: 18.115 m
+
+Time: 02:03:45
+GPS: (35.6432900,139.5232533)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 204.192
+Current Azimuth: 238.390
+Goal Distance: 17.293 m
+
+Time: 02:03:46
+GPS: (35.6432867,139.5232483)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 203.302
+Current Azimuth: 236.342
+Goal Distance: 16.771 m
+
+Time: 02:03:48
+GPS: (35.6432850,139.5232433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 202.108
+Current Azimuth: 239.936
+Goal Distance: 16.425 m
+
+Time: 02:03:49
+GPS: (35.6432833,139.5232400)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 201.365
+Current Azimuth: 237.124
+Goal Distance: 16.141 m
+
+Time: 02:03:50
+GPS: (35.6432833,139.5232400)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 201.365
+Current Azimuth: 238.253
+Goal Distance: 16.141 m
+
+Time: 02:03:51
+GPS: (35.6432783,139.5232317)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 199.502
+Current Azimuth: 246.762
+Goal Distance: 15.356 m
+
+Time: 02:03:52
+GPS: (35.6432750,139.5232283)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 198.885
+Current Azimuth: 234.609
+Goal Distance: 14.907 m
+
+Time: 02:03:53
+GPS: (35.6432733,139.5232233)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 197.440
+Current Azimuth: 232.273
+Goal Distance: 14.589 m
+
+Time: 02:03:54
+GPS: (35.6432717,139.5232200)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 196.511
+Current Azimuth: 231.593
+Goal Distance: 14.324 m
+
+Time: 02:03:55
+GPS: (35.6432717,139.5232200)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 196.511
+Current Azimuth: 232.054
+Goal Distance: 14.324 m
+
+Time: 02:03:56
+GPS: (35.6432667,139.5232133)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 194.745
+Current Azimuth: 234.136
+Goal Distance: 13.625 m
+
+Time: 02:03:57
+GPS: (35.6432633,139.5232083)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 193.251
+Current Azimuth: 229.561
+Goal Distance: 13.155 m
+
+Time: 02:03:58
+GPS: (35.6432617,139.5232067)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 192.790
+Current Azimuth: 233.054
+Goal Distance: 12.941 m
+
+Time: 02:03:59
+GPS: (35.6432583,139.5232017)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 191.142
+Current Azimuth: 222.332
+Goal Distance: 12.484 m
+
+Time: 02:04:00
+GPS: (35.6432583,139.5232017)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 191.142
+Current Azimuth: 229.889
+Goal Distance: 12.484 m
+
+Time: 02:04:01
+GPS: (35.6432533,139.5231967)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 189.517
+Current Azimuth: 224.288
+Goal Distance: 11.855 m
+
+Time: 02:04:02
+GPS: (35.6432500,139.5231933)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 188.334
+Current Azimuth: 218.757
+Goal Distance: 11.442 m
+
+Time: 02:04:03
+GPS: (35.6432467,139.5231900)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 187.064
+Current Azimuth: 214.457
+Goal Distance: 11.034 m
+
+Time: 02:04:04
+GPS: (35.6432433,139.5231867)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 185.697
+Current Azimuth: 212.903
+Goal Distance: 10.631 m
+
+Time: 02:04:05
+GPS: (35.6432400,139.5231833)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 184.224
+Current Azimuth: 213.202
+Goal Distance: 10.236 m
+
+Time: 02:04:06
+GPS: (35.6432367,139.5231800)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 182.633
+Current Azimuth: 209.493
+Goal Distance: 9.847 m
+
+Time: 02:04:07
+GPS: (35.6432317,139.5231783)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 181.861
+Current Azimuth: 216.443
+Goal Distance: 9.285 m
+
+Time: 02:04:08
+GPS: (35.6432283,139.5231750)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 180.000
+Current Azimuth: 223.492
+Goal Distance: 8.909 m
+
+Time: 02:04:09
+GPS: (35.6432250,139.5231717)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 177.977
+Current Azimuth: 221.777
+Goal Distance: 8.543 m
+
+Time: 02:04:10
+GPS: (35.6432233,139.5231683)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 175.870
+Current Azimuth: 226.680
+Goal Distance: 8.374 m
+
+Time: 02:04:11
+GPS: (35.6432200,139.5231650)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 173.534
+Current Azimuth: 218.474
+Goal Distance: 8.032 m
+
+Time: 02:04:12
+GPS: (35.6432167,139.5231633)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 172.104
+Current Azimuth: 215.795
+Goal Distance: 7.683 m
+
+Time: 02:04:13
+GPS: (35.6432133,139.5231600)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 169.384
+Current Azimuth: 211.684
+Goal Distance: 7.365 m
+
+Time: 02:04:14
+GPS: (35.6432100,139.5231567)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 166.425
+Current Azimuth: 209.084
+Goal Distance: 7.065 m
+
+Time: 02:04:15
+GPS: (35.6432067,139.5231533)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 163.213
+Current Azimuth: 203.991
+Goal Distance: 6.787 m
+
+Time: 02:04:16
+GPS: (35.6432033,139.5231517)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 160.988
+Current Azimuth: 200.275
+Goal Distance: 6.480 m
+
+Time: 02:04:17
+GPS: (35.6431983,139.5231500)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 157.900
+Current Azimuth: 201.571
+Goal Distance: 6.011 m
+
+Time: 02:04:18
+GPS: (35.6431950,139.5231483)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 155.106
+Current Azimuth: 193.679
+Goal Distance: 5.732 m
+
+Time: 02:04:19
+GPS: (35.6431917,139.5231483)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 153.448
+Current Azimuth: 195.597
+Goal Distance: 5.397 m
+
+Time: 02:04:20
+GPS: (35.6431867,139.5231467)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 149.031
+Current Azimuth: 192.651
+Goal Distance: 4.980 m
+
+Time: 02:04:21
+GPS: (35.6431833,139.5231450)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 145.166
+Current Azimuth: 192.613
+Goal Distance: 4.752 m
+
+Time: 02:04:22
+GPS: (35.6431800,139.5231450)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 142.437
+Current Azimuth: 187.469
+Goal Distance: 4.453 m
+
+Time: 02:04:23
+GPS: (35.6431750,139.5231450)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 137.601
+Current Azimuth: 184.336
+Goal Distance: 4.026 m
+
+Time: 02:04:24
+GPS: (35.6431717,139.5231433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 132.239
+Current Azimuth: 180.138
+Goal Distance: 3.870 m
+
+Time: 02:04:25
+GPS: (35.6431683,139.5231433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 127.899
+Current Azimuth: 175.863
+Goal Distance: 3.630 m
+
+Time: 02:04:26
+GPS: (35.6431633,139.5231433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 120.292
+Current Azimuth: 174.087
+Goal Distance: 3.320 m
+
+Time: 02:04:27
+GPS: (35.6431600,139.5231433)
+target coord:(35.6431483,139.5231750)
+Target Azimuth: 114.449
+Current Azimuth: 165.964
+Goal Distance: 3.149 m
+
+Goal!
+[2K[0Gsudo systemctl stop rovers[26C[2K[0Gsudo systemctl stop roverse[27C[2K[0Gsudo systemctl stop roverser[28C[2K[0Gsudo systemctl stop roverserv[29C[2K[0Gsudo systemctl stop roverservo[30C[2K[0Gsudo systemctl stop roverservo [31C[2K[0Gsudo systemctl stop roverservo s[32C[2K[0Gsudo systemctl stop roverservo st[33C[2K[0Gsudo systemctl stop roverservo sto[34C[2K[0Gsudo systemctl stop roverservo stop[35C[2K[0Gsudo systemctl stop roverservo stop
+[36C[F> sudo systemctl stop roverservo stop
+Command 'sudo' not found!
+[1m[02:04:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[02:04:46] [36mSequence: [32m'navigating'
+[0mPress Ctrl-C again to quit!
+Shutting down...
