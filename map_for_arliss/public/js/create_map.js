@@ -1,4 +1,3 @@
-let map;
 // Japan map
 let japanMap = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
     attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>�n���@�^�C��</a>",
@@ -35,7 +34,7 @@ function makeMap(){
             "Direction": arrows,
         }
 
-        map = L.map('mapid', {
+        let map = L.map('mapid', {
             center: L.latLng(log.setting.start.latitude, log.setting.start.longitude),
             zoom: 20,
             layers: [
