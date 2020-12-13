@@ -1,0 +1,4422 @@
+GPS Sensor is Ready!
+Pressure Sensor is Ready!
+VIDEOIO ERROR: V4L: can't open camera by index 0
+Error: Unable to initialize camera
+Error: Failed to initialize LoRaRM92a! (cannot open '/dev/ttySOFT0')
+PoseJudgment: ( rollOverThresholdY: 0.65, rollOverThresholdZ: 10, turnOverThresholdX: 9999, turnOverThresholdZ: 0.8, standThresholdX: 0.9 )
+Log file: log/20201211_2159_log_nineaxis1.csv
+Log file: log/20201211_2159_log_gps1.csv
+Log file: log/20201211_2159_log_pressure1.csv
+Log file: log/20201211_2159_log_lora1.csv
+[33m    .  + ・ **  .   *  .  ++  . 
+    +    ▄▄               ▄▄   *  .
+   . *   ██    ▄▄   ▄▄    ██   +  
+     . + ██    ██   ██    ██  ・* . 
+   +.    ███████████████████    ** +  
+   +  .  ██    ██   ██    ██  .  + 
+  . **   ██    ▀▀   ▀▀    ██    * 
+  +      ▀▀               ▀▀  . + 
+    .*      +   *     .   *  ・ ++ 
+         █ █ █▀█ █▀█ █▀▀ █▀▀       
+         █▀█ █ █ █▀▀ █▀▀ ▀▀█       
+         ▀ ▀ ▀▀▀ ▀   ▀▀▀ ▀▀▀       
+         Leader: Yukiko Fukumoto   
+         Hard: Yoshimiki Maekawa   
+               Yusuke Maekawa    
+         Soft: Yohei Hayamizu    
+               Ryotaro Arai    
+         Circuit: Iko Nakari    
+ 
+         Designer: Yoshimiki Maekawa 
+         Writer: Iko Nakari   
+[0m[30m[46m    Takadama Lab.  ACTS 2020   [0m   
+
+alias 'ww' = 'motor 100'
+alias 'hh' = 'motor 0'
+alias 'ss' = 'motor -100'
+alias 'aa' = 'motor 0 100'
+alias 'dd' = 'motor 100 0'
+alias 'test' = 'start testing'
+alias 'wait' = 'start waiting'
+alias 'fall' = 'start falling'
+alias 'sepa' = 'start para_separating'
+alias 'navi' = 'start navigating'
+alias 'detect' = 'start goal_detecting'
+alias 'posetest' = 'start pose_detection_testing'
+alias 'lighttest' = 'start light_detection_testing'
+alias 'wake' = 'start waking'
+alias 'pidww' = 'magnet_pid drive'
+alias 'pidhh' = 'magnet_pid stop;motor 0'
+Waiting Mode :light, 1
+Wi-Fi has been stopped!
+LoRa has been stopped!
+[1m[21:59:30] [36mSequence: [32m'waiting'
+[0mTime: 21:59:30
+Light count: 0/10 (LOW)
+
+Time: 21:59:31
+Light count: 0/10 (LOW)
+
+Time: 21:59:32
+Light count: 0/10 (LOW)
+
+Time: 21:59:33
+Light count: 0/10 (LOW)
+
+Time: 21:59:34
+Light count: 0/10 (LOW)
+
+Time: 21:59:35
+Light count: 0/10 (LOW)
+
+Time: 21:59:36
+Light count: 0/10 (LOW)
+
+Time: 21:59:37
+Light count: 0/10 (LOW)
+
+Time: 21:59:38
+Light count: 0/10 (LOW)
+
+Time: 21:59:39
+Light count: 0/10 (LOW)
+
+Time: 21:59:40
+Light count: 0/10 (LOW)
+
+Time: 21:59:41
+Light count: 0/10 (LOW)
+
+Time: 21:59:42
+Light count: 0/10 (LOW)
+
+Time: 21:59:43
+Light count: 0/10 (LOW)
+
+Time: 21:59:44
+Light count: 0/10 (LOW)
+
+Time: 21:59:45
+Light count: 0/10 (LOW)
+
+Time: 21:59:46
+Light count: 0/10 (LOW)
+
+Time: 21:59:47
+Light count: 0/10 (LOW)
+
+Time: 21:59:48
+Light count: 0/10 (LOW)
+
+Time: 21:59:49
+Light count: 0/10 (LOW)
+
+Time: 21:59:50
+Light count: 0/10 (LOW)
+
+Time: 21:59:51
+Light count: 0/10 (LOW)
+
+Time: 21:59:52
+Light count: 0/10 (LOW)
+
+Time: 21:59:53
+Light count: 0/10 (LOW)
+
+Time: 21:59:54
+Light count: 0/10 (LOW)
+
+Time: 21:59:55
+Light count: 0/10 (LOW)
+
+Time: 21:59:56
+Light count: 0/10 (LOW)
+
+Time: 21:59:57
+Light count: 0/10 (LOW)
+
+Time: 21:59:58
+Light count: 0/10 (LOW)
+
+Time: 21:59:59
+Light count: 0/10 (LOW)
+
+Time: 22:00:00
+Light count: 0/10 (LOW)
+
+Time: 22:00:01
+Light count: 0/10 (LOW)
+
+Time: 22:00:02
+Light count: 0/10 (LOW)
+
+Time: 22:00:03
+Light count: 0/10 (LOW)
+
+Time: 22:00:04
+Light count: 0/10 (LOW)
+
+Time: 22:00:05
+Light count: 0/10 (LOW)
+
+Time: 22:00:06
+Light count: 0/10 (LOW)
+
+Time: 22:00:07
+Light count: 0/10 (LOW)
+
+Time: 22:00:08
+Light count: 0/10 (LOW)
+
+Time: 22:00:09
+Light count: 0/10 (LOW)
+
+Time: 22:00:10
+Light count: 0/10 (LOW)
+
+Time: 22:00:12
+Light count: 0/10 (LOW)
+
+Time: 22:00:13
+Light count: 0/10 (LOW)
+
+Time: 22:00:14
+Light count: 0/10 (LOW)
+
+Time: 22:00:15
+Light count: 0/10 (LOW)
+
+Time: 22:00:16
+Light count: 0/10 (LOW)
+
+Time: 22:00:17
+Light count: 0/10 (LOW)
+
+Time: 22:00:18
+Light count: 0/10 (LOW)
+
+Time: 22:00:19
+Light count: 0/10 (LOW)
+
+Time: 22:00:20
+Light count: 0/10 (LOW)
+
+Time: 22:00:21
+Light count: 0/10 (LOW)
+
+Time: 22:00:22
+Light count: 0/10 (LOW)
+
+Time: 22:00:23
+Light count: 0/10 (LOW)
+
+Time: 22:00:24
+Light count: 0/10 (LOW)
+
+Time: 22:00:25
+Light count: 0/10 (LOW)
+
+Time: 22:00:26
+Light count: 0/10 (LOW)
+
+Time: 22:00:27
+Light count: 0/10 (LOW)
+
+Time: 22:00:28
+Light count: 0/10 (LOW)
+
+Time: 22:00:29
+Light count: 0/10 (LOW)
+
+Time: 22:00:30
+Light count: 0/10 (LOW)
+
+Time: 22:00:31
+Light count: 0/10 (LOW)
+
+Time: 22:00:32
+Light count: 0/10 (LOW)
+
+Time: 22:00:33
+Light count: 0/10 (LOW)
+
+Time: 22:00:34
+Light count: 0/10 (LOW)
+
+Time: 22:00:35
+Light count: 0/10 (LOW)
+
+Time: 22:00:36
+Light count: 0/10 (LOW)
+
+Time: 22:00:37
+Light count: 0/10 (LOW)
+
+Time: 22:00:38
+Light count: 0/10 (LOW)
+
+Time: 22:00:39
+Light count: 0/10 (LOW)
+
+Time: 22:00:40
+Light count: 0/10 (LOW)
+
+Time: 22:00:41
+Light count: 0/10 (LOW)
+
+Time: 22:00:42
+Light count: 0/10 (LOW)
+
+Time: 22:00:43
+Light count: 0/10 (LOW)
+
+Time: 22:00:44
+Light count: 0/10 (LOW)
+
+Time: 22:00:45
+Light count: 0/10 (LOW)
+
+Time: 22:00:46
+Light count: 0/10 (LOW)
+
+Time: 22:00:47
+Light count: 0/10 (LOW)
+
+Time: 22:00:48
+Light count: 0/10 (LOW)
+
+Time: 22:00:49
+Light count: 0/10 (LOW)
+
+Time: 22:00:50
+Light count: 0/10 (LOW)
+
+Time: 22:00:51
+Light count: 0/10 (LOW)
+
+Time: 22:00:52
+Light count: 0/10 (LOW)
+
+Time: 22:00:53
+Light count: 0/10 (LOW)
+
+Time: 22:00:54
+Light count: 0/10 (LOW)
+
+Time: 22:00:55
+Light count: 0/10 (LOW)
+
+Time: 22:00:56
+Light count: 0/10 (LOW)
+
+Time: 22:00:57
+Light count: 0/10 (LOW)
+
+Time: 22:00:58
+Light count: 0/10 (LOW)
+
+Time: 22:00:59
+Light count: 0/10 (LOW)
+
+Time: 22:01:00
+Light count: 0/10 (LOW)
+
+Time: 22:01:01
+Light count: 0/10 (LOW)
+
+Time: 22:01:02
+Light count: 0/10 (LOW)
+
+Time: 22:01:03
+Light count: 0/10 (LOW)
+
+Time: 22:01:04
+Light count: 0/10 (LOW)
+
+Time: 22:01:05
+Light count: 0/10 (LOW)
+
+Time: 22:01:06
+Light count: 0/10 (LOW)
+
+Time: 22:01:07
+Light count: 0/10 (LOW)
+
+Time: 22:01:08
+Light count: 0/10 (HIGH)
+
+Time: 22:01:09
+Light count: 1/10 (HIGH)
+
+Time: 22:01:10
+Light count: 2/10 (HIGH)
+
+Time: 22:01:11
+Light count: 3/10 (HIGH)
+
+Time: 22:01:12
+Light count: 4/10 (HIGH)
+
+Time: 22:01:13
+Light count: 5/10 (HIGH)
+
+Time: 22:01:14
+Light count: 6/10 (HIGH)
+
+Time: 22:01:15
+Light count: 7/10 (HIGH)
+
+Time: 22:01:17
+Light count: 8/10 (HIGH)
+
+Time: 22:01:18
+Light count: 9/10 (HIGH)
+
+Wi-Fi has been restarted!
+[1m[22:01:22] [36mSequence: [32m'falling'
+[0mTime: 22:01:23
+Pressure count: 1/10 (901.215 hPa)
+Gyro count:     1/10
+GPS position:   35.4124100, 138.5938150
+
+Time: 22:01:24
+Pressure count: 2/10 (901.2518 hPa)
+Gyro count:     2/10
+GPS position:   35.4123817, 138.5938700
+
+Time: 22:01:25
+Pressure count: 3/10 (901.2945 hPa)
+Gyro count:     3/10
+GPS position:   35.4123533, 138.5939217
+
+Time: 22:01:26
+Pressure count: 4/10 (901.3572 hPa)
+Gyro count:     4/10
+GPS position:   35.4123250, 138.5939767
+
+Time: 22:01:27
+Pressure count: 5/10 (901.2892 hPa)
+Gyro count:     5/10
+GPS position:   35.4123033, 138.5940350
+
+Time: 22:01:28
+Pressure count: 6/10 (901.2839 hPa)
+Gyro count:     6/10
+GPS position:   35.4122867, 138.5940833
+
+Time: 22:01:29
+Pressure count: 7/10 (901.2689 hPa)
+Gyro count:     7/10
+GPS position:   35.4122683, 138.5941417
+
+Time: 22:01:30
+Pressure count: 8/10 (901.2637 hPa)
+Gyro count:     8/10
+GPS position:   35.4122533, 138.5942050
+
+Time: 22:01:31
+Pressure count: 9/10 (901.2839 hPa)
+Gyro count:     9/10
+GPS position:   35.4122383, 138.5942433
+
+Falling completed! (by gyro and pressure)
+[1m[22:01:32] [36mSequence: [32m'para_separating'
+[0mPara separating... (1/10)
+Para separating... (2/10)
+Para separating... (3/10)
+Para separating... (4/10)
+Para separating... (5/10)
+Para separating... (6/10)
+Para separating... (7/10)
+Para separating... (8/10)
+Para separating... (9/10)
+Para separating... (10/10)
+Para separating finished!
+[1m[22:02:02] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[22:02:02] [36mSequence: [32m'navigating' > 'magnet_calibrating' > 'waking'
+[0mWaking finished!
+[1m[22:02:04] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0m[1m[22:02:05] [36mSequence: [32m'navigating' > 'magnet_calibrating' > 'waking_from_rollover'
+[0mWakingFromRollover(ACCEL_GRADUALLY): Motor forward (24 sec)
+[1m[22:02:06] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0mMagnetCalibrating: Turning right...
+MagnetCalibrating: Turning left...
+MagnetCalibrating: Turning stopped!
+min: (-37.2, -58.05, -27.3)
+max: (20.85, 1.8, -11.7)
+Command:
+nineaxis minmax -37.2 -58.05 -27.3 20.85 1.8 -11.7
+--------------------
+filtered min: (-32.1, -53.1, -22.95)
+filtered max: (17.25, -2.7, -15.6)
+Command:
+nineaxis minmax -32.1 -53.1 -22.95 17.25 -2.7 -15.6
+MagnetCalibrating has been finished!
+[1m[22:02:18] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[22:02:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:02:18] [36mSequence: [32m'navigating'
+[0mTime: 22:02:19
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 354.685
+Goal Distance: 90.887 m
+
+Time: 22:02:20
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 18.583
+Goal Distance: 90.887 m
+
+Time: 22:02:21
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 18.396
+Goal Distance: 90.887 m
+
+Time: 22:02:22
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.762
+Goal Distance: 90.887 m
+
+Time: 22:02:23
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.149
+Goal Distance: 90.887 m
+
+Time: 22:02:24
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.726
+Goal Distance: 90.887 m
+
+Time: 22:02:25
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.531
+Goal Distance: 90.887 m
+
+Time: 22:02:26
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.157
+Goal Distance: 90.887 m
+
+Time: 22:02:27
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.924
+Goal Distance: 90.887 m
+
+Time: 22:02:28
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 21.043
+Goal Distance: 90.887 m
+
+Time: 22:02:29
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.924
+Goal Distance: 90.887 m
+
+Time: 22:02:30
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.672
+Goal Distance: 90.887 m
+
+Time: 22:02:31
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.876
+Goal Distance: 90.887 m
+
+Time: 22:02:32
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.299
+Goal Distance: 90.887 m
+
+Time: 22:02:33
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.327
+Goal Distance: 90.887 m
+
+Time: 22:02:34
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.531
+Goal Distance: 90.887 m
+
+Time: 22:02:35
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.533
+Goal Distance: 90.887 m
+
+Time: 22:02:36
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 21.043
+Goal Distance: 90.887 m
+
+Time: 22:02:37
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.124
+Goal Distance: 90.887 m
+
+Time: 22:02:38
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.350
+Goal Distance: 90.887 m
+
+Time: 22:02:39
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.672
+Goal Distance: 90.887 m
+
+Time: 22:02:40
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.327
+Goal Distance: 90.887 m
+
+Time: 22:02:41
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.100
+Goal Distance: 90.887 m
+
+Time: 22:02:42
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 20.124
+Goal Distance: 90.887 m
+
+Time: 22:02:43
+GPS: (35.4126033,138.5940917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.856
+Current Azimuth: 19.945
+Goal Distance: 90.887 m
+
+[1m[22:02:44] [36mSequence: [32m'navigating' > 'escaping'
+[0mRetrying escaping... (1/8)
+Retrying escaping... (2/8)
+Retrying escaping... (3/8)
+Retrying escaping... (4/8)
+Retrying escaping... (5/8)
+Retrying escaping... (6/8)
+Retrying escaping... (7/8)
+Retrying escaping... (8/8)
+[1m[22:03:44] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+Time: 22:03:44
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 44.460
+Goal Distance: 90.698 m
+
+Time: 22:03:45
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 330.270
+Goal Distance: 90.698 m
+
+Time: 22:03:46
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 306.948
+Goal Distance: 90.698 m
+
+Time: 22:03:47
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 318.223
+Goal Distance: 90.698 m
+
+Time: 22:03:48
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 307.545
+Goal Distance: 90.698 m
+
+Time: 22:03:49
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 310.772
+Goal Distance: 90.698 m
+
+Time: 22:03:50
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 304.552
+Goal Distance: 90.698 m
+
+Time: 22:03:51
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 294.620
+Goal Distance: 90.698 m
+
+Time: 22:03:52
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 301.651
+Goal Distance: 90.698 m
+
+Time: 22:03:53
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 295.260
+Goal Distance: 90.698 m
+
+Time: 22:03:54
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 286.079
+Goal Distance: 90.698 m
+
+Time: 22:03:55
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 284.082
+Goal Distance: 90.698 m
+
+Time: 22:03:56
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 287.713
+Goal Distance: 90.698 m
+
+Time: 22:03:57
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 286.635
+Goal Distance: 90.698 m
+
+Time: 22:03:58
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 282.069
+Goal Distance: 90.698 m
+
+Time: 22:03:59
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 289.475
+Goal Distance: 90.698 m
+
+Time: 22:04:00
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 291.295
+Goal Distance: 90.698 m
+
+Time: 22:04:01
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 293.357
+Goal Distance: 90.698 m
+
+Time: 22:04:02
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 285.479
+Goal Distance: 90.698 m
+
+Time: 22:04:03
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 292.935
+Goal Distance: 90.698 m
+
+Time: 22:04:04
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 294.379
+Goal Distance: 90.698 m
+
+Time: 22:04:05
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 294.807
+Goal Distance: 90.698 m
+
+Time: 22:04:06
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 286.994
+Goal Distance: 90.698 m
+
+Time: 22:04:07
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 275.095
+Goal Distance: 90.698 m
+
+Time: 22:04:08
+GPS: (35.4126050,138.5940900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.763
+Current Azimuth: 277.653
+Goal Distance: 90.698 m
+
+[1m[22:04:09] [36mSequence: [32m'navigating' > 'escaping'
+[0mRetrying escaping... (1/8)
+Retrying escaping... (2/8)
+Retrying escaping... (3/8)
+Retrying escaping... (4/8)
+Retrying escaping... (5/8)
+Retrying escaping... (6/8)
+Retrying escaping... (7/8)
+Retrying escaping... (8/8)
+[1m[22:05:09] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+Time: 22:05:09
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 169.593
+Goal Distance: 90.551 m
+
+Time: 22:05:10
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 232.268
+Goal Distance: 90.551 m
+
+Time: 22:05:11
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 252.476
+Goal Distance: 90.551 m
+
+Time: 22:05:12
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 254.274
+Goal Distance: 90.551 m
+
+Time: 22:05:13
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 265.725
+Goal Distance: 90.551 m
+
+Time: 22:05:14
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 263.090
+Goal Distance: 90.551 m
+
+Time: 22:05:15
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 271.434
+Goal Distance: 90.551 m
+
+Time: 22:05:16
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 272.617
+Goal Distance: 90.551 m
+
+Time: 22:05:17
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 274.464
+Goal Distance: 90.551 m
+
+Time: 22:05:18
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 279.246
+Goal Distance: 90.551 m
+
+Time: 22:05:19
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 280.058
+Goal Distance: 90.551 m
+
+Time: 22:05:20
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 285.123
+Goal Distance: 90.551 m
+
+Time: 22:05:21
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 284.281
+Goal Distance: 90.551 m
+
+Time: 22:05:22
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 290.672
+Goal Distance: 90.551 m
+
+Time: 22:05:23
+GPS: (35.4126050,138.5940883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.784
+Current Azimuth: 285.810
+Goal Distance: 90.551 m
+
+Time: 22:05:24
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 285.320
+Goal Distance: 90.067 m
+
+Time: 22:05:26
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 293.220
+Goal Distance: 90.067 m
+
+Time: 22:05:27
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 284.855
+Goal Distance: 90.067 m
+
+Time: 22:05:28
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 271.543
+Goal Distance: 90.067 m
+
+Time: 22:05:29
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 272.385
+Goal Distance: 90.067 m
+
+Time: 22:05:30
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 280.555
+Goal Distance: 90.067 m
+
+Time: 22:05:31
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 275.171
+Goal Distance: 90.067 m
+
+Time: 22:05:32
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 273.684
+Goal Distance: 90.067 m
+
+Time: 22:05:33
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 279.738
+Goal Distance: 90.067 m
+
+Time: 22:05:34
+GPS: (35.4126067,138.5940833)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.733
+Current Azimuth: 260.696
+Goal Distance: 90.067 m
+
+[1m[22:05:34] [36mSequence: [32m'navigating' > 'escaping'
+[0mRetrying escaping... (1/8)
+Retrying escaping... (2/8)
+Retrying escaping... (3/8)
+Retrying escaping... (4/8)
+Retrying escaping... (5/8)
+Retrying escaping... (6/8)
+Retrying escaping... (7/8)
+Retrying escaping... (8/8)
+[1m[22:06:34] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+Time: 22:06:35
+GPS: (35.4126050,138.5938583)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.548
+Current Azimuth: 108.779
+Goal Distance: 70.353 m
+
+[1m[22:06:35] [36mSequence: [32m'navigating' > 'magnet_calibrating'
+[0mMagnetCalibrating: Turning right...
+MagCalib stuck detection result: [ -- OK -- -- ] (azimuth:151)
+MagCalib stuck detection result: [ -- OK OK -- ] (azimuth:183)
+MagCalib stuck detection result: [ -- OK OK OK ] (azimuth:271)
+MagCalib stuck detection result: [ OK OK OK OK ] (azimuth:0.305)
+MagnetCalibrating: Turning left...
+MagnetCalibrating: Turning stopped!
+min: (-33.4, -57.1, -22.1)
+max: (18.9, 2.25, -6.6)
+Command:
+nineaxis minmax -33.4 -57.1 -22.1 18.9 2.25 -6.6
+--------------------
+filtered min: (-29.8, -52.2, -17.6)
+filtered max: (13.9, -3.45, -10.9)
+Command:
+nineaxis minmax -29.8 -52.2 -17.6 13.9 -3.45 -10.9
+MagCalib stuck detection result: [ OK OK OK OK ]
+  ---> Rover is not stuck!
+MagnetCalibrating has been finished!
+[1m[22:06:47] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+Time: 22:06:47
+GPS: (35.4126083,138.5938300)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.866
+Current Azimuth: 61.308
+Goal Distance: 67.784 m
+
+Time: 22:06:48
+GPS: (35.4126100,138.5938167)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 287.015
+Current Azimuth: 22.528
+Goal Distance: 66.573 m
+
+Time: 22:06:49
+GPS: (35.4126150,138.5937983)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.975
+Current Azimuth: 304.908
+Goal Distance: 64.820 m
+
+Time: 22:06:50
+GPS: (35.4126167,138.5937900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 287.013
+Current Azimuth: 307.834
+Goal Distance: 64.042 m
+
+Time: 22:06:51
+GPS: (35.4126183,138.5937900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.855
+Current Azimuth: 296.302
+Goal Distance: 63.988 m
+
+Time: 22:06:52
+GPS: (35.4126200,138.5937883)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.735
+Current Azimuth: 309.328
+Goal Distance: 63.790 m
+
+Time: 22:06:53
+GPS: (35.4126267,138.5937717)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.481
+Current Azimuth: 304.584
+Goal Distance: 62.129 m
+
+Time: 22:06:54
+GPS: (35.4126350,138.5937483)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 286.204
+Current Azimuth: 308.208
+Goal Distance: 59.836 m
+
+Time: 22:06:55
+GPS: (35.4126417,138.5937317)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.918
+Current Azimuth: 299.285
+Goal Distance: 58.178 m
+
+Time: 22:06:56
+GPS: (35.4126483,138.5937083)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.781
+Current Azimuth: 299.176
+Goal Distance: 55.939 m
+
+Time: 22:06:57
+GPS: (35.4126517,138.5936967)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.709
+Current Azimuth: 298.612
+Goal Distance: 54.819 m
+
+Time: 22:06:58
+GPS: (35.4126567,138.5936767)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.661
+Current Azimuth: 300.089
+Goal Distance: 52.922 m
+
+Time: 22:06:59
+GPS: (35.4126600,138.5936650)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.582
+Current Azimuth: 297.205
+Goal Distance: 51.803 m
+
+Time: 22:07:00
+GPS: (35.4126650,138.5936500)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.387
+Current Azimuth: 292.107
+Goal Distance: 50.343 m
+
+Time: 22:07:01
+GPS: (35.4126683,138.5936317)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.486
+Current Azimuth: 276.991
+Goal Distance: 48.641 m
+
+Time: 22:07:02
+GPS: (35.4126717,138.5936117)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.641
+Current Azimuth: 278.566
+Goal Distance: 46.793 m
+
+Time: 22:07:03
+GPS: (35.4126767,138.5935967)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.428
+Current Azimuth: 274.535
+Goal Distance: 45.333 m
+
+Time: 22:07:04
+GPS: (35.4126817,138.5935800)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.252
+Current Azimuth: 281.014
+Goal Distance: 43.727 m
+
+Time: 22:07:05
+GPS: (35.4126867,138.5935550)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.334
+Current Azimuth: 253.677
+Goal Distance: 41.393 m
+
+Time: 22:07:06
+GPS: (35.4126883,138.5935467)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.364
+Current Azimuth: 265.181
+Goal Distance: 40.614 m
+
+Time: 22:07:07
+GPS: (35.4126917,138.5935283)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.486
+Current Azimuth: 242.801
+Goal Distance: 38.912 m
+
+Time: 22:07:08
+GPS: (35.4126933,138.5935083)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.958
+Current Azimuth: 258.526
+Goal Distance: 37.115 m
+
+Time: 22:07:09
+GPS: (35.4126933,138.5935083)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.958
+Current Azimuth: 267.260
+Goal Distance: 37.115 m
+
+Time: 22:07:10
+GPS: (35.4127033,138.5934683)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.833
+Current Azimuth: 276.853
+Goal Distance: 33.320 m
+
+Time: 22:07:11
+GPS: (35.4127083,138.5934500)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.685
+Current Azimuth: 280.695
+Goal Distance: 31.568 m
+
+Time: 22:07:12
+GPS: (35.4127117,138.5934350)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.705
+Current Azimuth: 292.150
+Goal Distance: 30.158 m
+
+Time: 22:07:13
+GPS: (35.4127167,138.5934200)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.371
+Current Azimuth: 298.859
+Goal Distance: 28.698 m
+
+Time: 22:07:14
+GPS: (35.4127167,138.5934200)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 285.371
+Current Azimuth: 299.960
+Goal Distance: 28.698 m
+
+Time: 22:07:15
+GPS: (35.4127283,138.5933900)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 284.189
+Current Azimuth: 294.560
+Goal Distance: 25.735 m
+
+Time: 22:07:16
+GPS: (35.4127317,138.5933767)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 284.041
+Current Azimuth: 285.679
+Goal Distance: 24.471 m
+
+Time: 22:07:17
+GPS: (35.4127367,138.5933633)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 283.431
+Current Azimuth: 283.374
+Goal Distance: 23.164 m
+
+Time: 22:07:18
+GPS: (35.4127417,138.5933467)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.926
+Current Azimuth: 289.708
+Goal Distance: 21.564 m
+
+Time: 22:07:19
+GPS: (35.4127417,138.5933467)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 282.926
+Current Azimuth: 293.623
+Goal Distance: 21.564 m
+
+Time: 22:07:20
+GPS: (35.4127517,138.5933150)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 281.557
+Current Azimuth: 294.034
+Goal Distance: 18.520 m
+
+Time: 22:07:21
+GPS: (35.4127550,138.5933050)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 280.964
+Current Azimuth: 292.772
+Goal Distance: 17.558 m
+
+Time: 22:07:22
+GPS: (35.4127600,138.5932917)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 279.850
+Current Azimuth: 294.920
+Goal Distance: 16.268 m
+
+Time: 22:07:23
+GPS: (35.4127633,138.5932800)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 279.153
+Current Azimuth: 288.181
+Goal Distance: 15.163 m
+
+Time: 22:07:24
+GPS: (35.4127667,138.5932700)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 278.257
+Current Azimuth: 327.901
+Goal Distance: 14.209 m
+
+Time: 22:07:25
+GPS: (35.4127683,138.5932650)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 277.764
+Current Azimuth: 337.943
+Goal Distance: 13.735 m
+
+Time: 22:07:26
+GPS: (35.4127700,138.5932583)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 277.317
+Current Azimuth: 343.664
+Goal Distance: 13.110 m
+
+Time: 22:07:27
+GPS: (35.4127717,138.5932533)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 276.745
+Current Azimuth: 341.171
+Goal Distance: 12.637 m
+
+Time: 22:07:28
+GPS: (35.4127733,138.5932483)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 276.128
+Current Azimuth: 297.688
+Goal Distance: 12.166 m
+
+Time: 22:07:29
+GPS: (35.4127750,138.5932483)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 275.258
+Current Azimuth: 297.673
+Goal Distance: 12.147 m
+
+Time: 22:07:30
+GPS: (35.4127750,138.5932467)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 275.324
+Current Azimuth: 314.791
+Goal Distance: 11.997 m
+
+Time: 22:07:31
+GPS: (35.4127767,138.5932450)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 274.497
+Current Azimuth: 330.750
+Goal Distance: 11.831 m
+
+Time: 22:07:32
+GPS: (35.4127783,138.5932433)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 273.647
+Current Azimuth: 310.536
+Goal Distance: 11.666 m
+
+Time: 22:07:33
+GPS: (35.4127783,138.5932417)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 273.695
+Current Azimuth: 291.455
+Goal Distance: 11.515 m
+
+Time: 22:07:34
+GPS: (35.4127800,138.5932400)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 272.810
+Current Azimuth: 279.342
+Goal Distance: 11.354 m
+
+Time: 22:07:35
+GPS: (35.4127817,138.5932367)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 271.925
+Current Azimuth: 277.847
+Goal Distance: 11.044 m
+
+Time: 22:07:37
+GPS: (35.4127817,138.5932350)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 271.952
+Current Azimuth: 274.757
+Goal Distance: 10.893 m
+
+Time: 22:07:38
+GPS: (35.4127850,138.5932267)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 270.000
+Current Azimuth: 264.779
+Goal Distance: 10.131 m
+
+Time: 22:07:39
+GPS: (35.4127867,138.5932133)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 268.808
+Current Azimuth: 269.045
+Goal Distance: 8.923 m
+
+Time: 22:07:40
+GPS: (35.4127883,138.5932033)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 267.349
+Current Azimuth: 274.817
+Goal Distance: 8.022 m
+
+Time: 22:07:41
+GPS: (35.4127900,138.5931933)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 265.522
+Current Azimuth: 285.055
+Goal Distance: 7.129 m
+
+Time: 22:07:42
+GPS: (35.4127900,138.5931850)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 264.991
+Current Azimuth: 277.744
+Goal Distance: 6.376 m
+
+Time: 22:07:43
+GPS: (35.4127950,138.5931717)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 257.782
+Current Azimuth: 279.604
+Goal Distance: 5.260 m
+
+Time: 22:07:44
+GPS: (35.4127967,138.5931633)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 253.502
+Current Azimuth: 276.532
+Goal Distance: 4.573 m
+
+Time: 22:07:45
+GPS: (35.4127967,138.5931567)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 251.039
+Current Azimuth: 269.748
+Goal Distance: 3.996 m
+
+Time: 22:07:46
+GPS: (35.4127983,138.5931483)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 243.859
+Current Azimuth: 268.788
+Goal Distance: 3.367 m
+
+Time: 22:07:47
+GPS: (35.4127983,138.5931417)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 238.472
+Current Azimuth: 274.962
+Goal Distance: 2.837 m
+
+Time: 22:07:48
+GPS: (35.4128000,138.5931333)
+target coord:(35.4127850,138.5931150)
+Target Azimuth: 224.888
+Current Azimuth: 269.753
+Goal Distance: 2.355 m
+
+[1m[22:07:49] [36mSequence: [32m'navigating' > 'detecting_surface'
+[0mDetecting surface subsequence has done!
+Sum of high frequency is 45.5
+Size of m_zAccelerations: 253
+The surface is GRASS!!
+[1m[22:08:04] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[22:08:04] [36mSequence: [32m'navigating' > 'sampling'
+[0mDone with sampling No.1
+[1m[22:08:16] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[22:08:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:08:16] [36mSequence: [32m'navigating'
+[0mTime: 22:08:16
+GPS: (35.4128100,138.5930517)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 337.315
+Current Azimuth: 16.005
+Goal Distance: 16.083 m
+
+Time: 22:08:17
+GPS: (35.4128083,138.5930533)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 337.077
+Current Azimuth: 346.192
+Goal Distance: 16.313 m
+
+Time: 22:08:18
+GPS: (35.4128083,138.5930550)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 336.589
+Current Azimuth: 336.340
+Goal Distance: 16.373 m
+
+Time: 22:08:19
+GPS: (35.4128083,138.5930550)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 336.589
+Current Azimuth: 358.863
+Goal Distance: 16.373 m
+
+Time: 22:08:20
+GPS: (35.4128083,138.5930567)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 336.105
+Current Azimuth: 4.479
+Goal Distance: 16.433 m
+
+Time: 22:08:21
+GPS: (35.4128083,138.5930567)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 336.105
+Current Azimuth: 345.506
+Goal Distance: 16.433 m
+
+Time: 22:08:22
+GPS: (35.4128100,138.5930583)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 335.357
+Current Azimuth: 335.634
+Goal Distance: 16.326 m
+
+Time: 22:08:23
+GPS: (35.4128100,138.5930600)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 334.876
+Current Azimuth: 342.842
+Goal Distance: 16.390 m
+
+Time: 22:08:24
+GPS: (35.4128100,138.5930600)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 334.876
+Current Azimuth: 346.061
+Goal Distance: 16.390 m
+
+Time: 22:08:25
+GPS: (35.4128117,138.5930600)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 334.598
+Current Azimuth: 353.108
+Goal Distance: 16.222 m
+
+Time: 22:08:26
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 354.730
+Goal Distance: 16.120 m
+
+Time: 22:08:27
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 357.395
+Goal Distance: 16.120 m
+
+Time: 22:08:28
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 355.814
+Goal Distance: 16.120 m
+
+Time: 22:08:29
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 354.217
+Goal Distance: 16.120 m
+
+Time: 22:08:30
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 352.449
+Goal Distance: 16.120 m
+
+Time: 22:08:31
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 351.889
+Goal Distance: 16.120 m
+
+Time: 22:08:32
+GPS: (35.4128133,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.829
+Current Azimuth: 352.146
+Goal Distance: 16.120 m
+
+Time: 22:08:33
+GPS: (35.4128117,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 334.117
+Current Azimuth: 351.599
+Goal Distance: 16.287 m
+
+Time: 22:08:34
+GPS: (35.4128117,138.5930633)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.641
+Current Azimuth: 351.341
+Goal Distance: 16.354 m
+
+Time: 22:08:35
+GPS: (35.4128117,138.5930633)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.641
+Current Azimuth: 356.851
+Goal Distance: 16.354 m
+
+Time: 22:08:36
+GPS: (35.4128117,138.5930633)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.641
+Current Azimuth: 22.725
+Goal Distance: 16.354 m
+
+Time: 22:08:37
+GPS: (35.4128117,138.5930633)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.641
+Current Azimuth: 19.260
+Goal Distance: 16.354 m
+
+Time: 22:08:38
+GPS: (35.4128133,138.5930633)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 333.349
+Current Azimuth: 9.677
+Goal Distance: 16.188 m
+
+Time: 22:08:39
+GPS: (35.4128150,138.5930650)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 332.572
+Current Azimuth: 353.140
+Goal Distance: 16.091 m
+
+Time: 22:08:40
+GPS: (35.4128183,138.5930633)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 332.438
+Current Azimuth: 347.624
+Goal Distance: 15.693 m
+
+Time: 22:08:41
+GPS: (35.4128233,138.5930617)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.970
+Current Azimuth: 341.880
+Goal Distance: 15.129 m
+
+Time: 22:08:42
+GPS: (35.4128283,138.5930600)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.466
+Current Azimuth: 339.941
+Goal Distance: 14.567 m
+
+Time: 22:08:43
+GPS: (35.4128333,138.5930567)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.465
+Current Azimuth: 335.760
+Goal Distance: 13.934 m
+
+Time: 22:08:44
+GPS: (35.4128383,138.5930533)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.464
+Current Azimuth: 336.466
+Goal Distance: 13.300 m
+
+Time: 22:08:46
+GPS: (35.4128417,138.5930500)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.859
+Current Azimuth: 351.235
+Goal Distance: 12.830 m
+
+Time: 22:08:47
+GPS: (35.4128467,138.5930483)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.256
+Current Azimuth: 340.633
+Goal Distance: 12.269 m
+
+Time: 22:08:48
+GPS: (35.4128517,138.5930450)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.243
+Current Azimuth: 328.254
+Goal Distance: 11.636 m
+
+Time: 22:08:49
+GPS: (35.4128567,138.5930417)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.229
+Current Azimuth: 339.043
+Goal Distance: 11.002 m
+
+Time: 22:08:50
+GPS: (35.4128617,138.5930367)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.951
+Current Azimuth: 344.619
+Goal Distance: 10.296 m
+
+Time: 22:08:51
+GPS: (35.4128667,138.5930333)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.982
+Current Azimuth: 352.432
+Goal Distance: 9.663 m
+
+Time: 22:08:52
+GPS: (35.4128717,138.5930317)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.176
+Current Azimuth: 342.968
+Goal Distance: 9.101 m
+
+Time: 22:08:53
+GPS: (35.4128767,138.5930283)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 331.154
+Current Azimuth: 2.880
+Goal Distance: 8.468 m
+
+Time: 22:08:54
+GPS: (35.4128800,138.5930267)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 330.823
+Current Azimuth: 16.473
+Goal Distance: 8.070 m
+
+Time: 22:08:55
+GPS: (35.4128833,138.5930267)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 329.485
+Current Azimuth: 43.832
+Goal Distance: 7.749 m
+
+Time: 22:08:56
+GPS: (35.4128850,138.5930283)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 327.808
+Current Azimuth: 19.143
+Goal Distance: 7.668 m
+
+Time: 22:08:57
+GPS: (35.4128867,138.5930283)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 327.054
+Current Azimuth: 344.831
+Goal Distance: 7.512 m
+
+Time: 22:08:58
+GPS: (35.4128883,138.5930267)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 327.259
+Current Azimuth: 332.388
+Goal Distance: 7.274 m
+
+Time: 22:08:59
+GPS: (35.4128917,138.5930267)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.607
+Current Azimuth: 332.929
+Goal Distance: 6.965 m
+
+Time: 22:09:00
+GPS: (35.4128917,138.5930267)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.607
+Current Azimuth: 317.481
+Goal Distance: 6.965 m
+
+Time: 22:09:01
+GPS: (35.4128917,138.5930267)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.607
+Current Azimuth: 301.614
+Goal Distance: 6.965 m
+
+Time: 22:09:02
+GPS: (35.4128933,138.5930250)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.778
+Current Azimuth: 278.934
+Goal Distance: 6.727 m
+
+Time: 22:09:03
+GPS: (35.4128933,138.5930250)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.778
+Current Azimuth: 284.871
+Goal Distance: 6.727 m
+
+Time: 22:09:04
+GPS: (35.4128933,138.5930250)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.778
+Current Azimuth: 297.673
+Goal Distance: 6.727 m
+
+Time: 22:09:05
+GPS: (35.4128917,138.5930233)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 327.711
+Current Azimuth: 320.433
+Goal Distance: 6.799 m
+
+Time: 22:09:06
+GPS: (35.4128917,138.5930217)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 328.801
+Current Azimuth: 328.560
+Goal Distance: 6.719 m
+
+Time: 22:09:07
+GPS: (35.4128933,138.5930200)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 329.095
+Current Azimuth: 340.022
+Goal Distance: 6.482 m
+
+Time: 22:09:08
+GPS: (35.4128950,138.5930183)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 329.411
+Current Azimuth: 343.600
+Goal Distance: 6.246 m
+
+Time: 22:09:09
+GPS: (35.4129000,138.5930167)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 327.870
+Current Azimuth: 340.296
+Goal Distance: 5.691 m
+
+Time: 22:09:10
+GPS: (35.4129033,138.5930150)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 327.121
+Current Azimuth: 334.997
+Goal Distance: 5.298 m
+
+Time: 22:09:11
+GPS: (35.4129083,138.5930133)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 325.008
+Current Azimuth: 329.521
+Goal Distance: 4.750 m
+
+Time: 22:09:12
+GPS: (35.4129167,138.5930083)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 322.547
+Current Azimuth: 322.793
+Goal Distance: 3.735 m
+
+Time: 22:09:13
+GPS: (35.4129233,138.5930050)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 318.468
+Current Azimuth: 328.409
+Goal Distance: 2.969 m
+
+Time: 22:09:14
+GPS: (35.4129233,138.5930050)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 318.468
+Current Azimuth: 337.300
+Goal Distance: 2.969 m
+
+Time: 22:09:15
+GPS: (35.4129317,138.5930017)
+target coord:(35.4129433,138.5929833)
+Target Azimuth: 307.852
+Current Azimuth: 337.249
+Goal Distance: 2.108 m
+
+[1m[22:09:16] [36mSequence: [32m'navigating' > 'detecting_surface'
+[0mDetecting surface subsequence has done!
+Sum of high frequency is 45.4
+Size of m_zAccelerations: 253
+The surface is GRASS!!
+[1m[22:09:31] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[22:09:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:31] [36mSequence: [32m'navigating'
+[0m[1m[22:09:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:31] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:32] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:33] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating'
+[0m[1m[22:09:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating'
+[0m[1m[22:09:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating'
+[0m[1m[22:09:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:37] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating'
+[0m[1m[22:09:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:39] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating'
+[0m[1m[22:09:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:41] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:42] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:43] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating'
+[0m[1m[22:09:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating'
+[0m[1m[22:09:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:46] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating'
+[0m[1m[22:09:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating'
+[0m[1m[22:09:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:49] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:50] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating'
+[0m[1m[22:09:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:52] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:53] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating'
+[0m[1m[22:09:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:55] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:56] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating'
+[0m[1m[22:09:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating'
+[0m[1m[22:09:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:09:59] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating'
+[0m[1m[22:10:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating'
+[0m[1m[22:10:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:02] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating'
+[0m[1m[22:10:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating'
+[0m[1m[22:10:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating'
+[0m[1m[22:10:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:06] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:07] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating'
+[0m[1m[22:10:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating'
+[0m[1m[22:10:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[2K[0G[[2C[2K[0G[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:10] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:11] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating'
+[0m[1m[22:10:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:13] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:14] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating'
+[0m[1m[22:10:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:16] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:17] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:18] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:19] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:20] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:21] [36mSequence: [32m'navigating'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating'
+[0m[1m[22:10:22] [36mSequence: [32m'navigating' > 'escaping'
+[0mRetrying escaping... (1/8)
+Retrying escaping... (2/8)
+Retrying escaping... (3/8)
+Retrying escaping... (4/8)
+Retrying escaping... (5/8)
+Retrying escaping... (6/8)
+Retrying escaping... (7/8)
+Retrying escaping... (8/8)
+[1m[22:11:22] [36mSequence: [32m'navigating'
+[0mGPS history of stuck_detection_by_gps has been reset because of subsequence interruption!
+[1m[22:11:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:23] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:24] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:25] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:26] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:27] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:28] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:29] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating'
+[0m[1m[22:11:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:31] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:32] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:33] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating'
+[0m[1m[22:11:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:35] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating'
+[0m[1m[22:11:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:37] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:38] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating'
+[0m[1m[22:11:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating'
+[0m[1m[22:11:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating'
+[0m[1m[22:11:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:42] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating'
+[0m[1m[22:11:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:44] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:45] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating'
+[0m[1m[22:11:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:47] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:48] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:49] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:50] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:51] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating'
+[0m[1m[22:11:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:53] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating'
+[0m[1m[22:11:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating'
+[0m[1m[22:11:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:56] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating'
+[0m[1m[22:11:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:58] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:11:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating'
+[0m[1m[22:12:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:01] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating'
+[0m[1m[22:12:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating'
+[0m[1m[22:12:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating'
+[0m[1m[22:12:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating'
+[0m[1m[22:12:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:06] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating'
+[0m[1m[22:12:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating'
+[0m[1m[22:12:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:09] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating'
+[0m[1m[22:12:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:11] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:12] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating'
+[0m[1m[22:12:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:14] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:15] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:16] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:17] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:18] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:19] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:20] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating'
+[0m[1m[22:12:21] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:22] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:23] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:24] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating'
+[0m[1m[22:12:25] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:26] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating'
+[0m[1m[22:12:27] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:28] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:29] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:30] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating'
+[0m[1m[22:12:31] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:32] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:33] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:34] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:35] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating'
+[0m[1m[22:12:36] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:37] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:38] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:39] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating'
+[0m[1m[22:12:40] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:41] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating'
+[0m[1m[22:12:42] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:43] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:44] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating'
+[0m[1m[22:12:45] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:46] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating'
+[0m[1m[22:12:47] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:48] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:49] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating'
+[0m[1m[22:12:50] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating'
+[0m[1m[22:12:51] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating'
+[0m[1m[22:12:52] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:53] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:54] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:55] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:56] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating'
+[0m[1m[22:12:57] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:58] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating'
+[0m[1m[22:12:59] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:00] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:01] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating'
+[0m[1m[22:13:02] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating'
+[0m[1m[22:13:03] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:04] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating'
+[0m[1m[22:13:05] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:06] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:07] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:08] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating'
+[0m[1m[22:13:09] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:10] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:11] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:12] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating'
+[0m[1m[22:13:13] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating'
+[0m[1m[22:13:14] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:15] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating'
+[0m[1m[22:13:16] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating'
+[0m[1m[22:13:17] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating'
+[0m[1m[22:13:18] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0mPress Ctrl-C again to quit!
+[1m[22:13:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating' > 'routing'
+[0m[1m[22:13:19] [36mSequence: [32m'navigating'
+[0mShutting down...

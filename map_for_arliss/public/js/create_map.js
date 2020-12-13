@@ -14,7 +14,8 @@ let worldMap = L.tileLayer('http://{s}.tile.stamen.com/{variant}/{z}/{x}/{y}.png
 
 function makeMap(){
     //20201210_01.json
-    $.getJSON('./json/20201117.json', (log) => {
+    //20201212.json
+    $.getJSON('./json/acts_first_flight.json', (log) => {
         let targetPoints, idealPath, realPath, realPoints, arrows;
         targetPoints = updateTargetPoints(log);
         idealPath = updateIdealPath(log);
@@ -107,9 +108,11 @@ function updateRealPath(data){
 
 function updateArrows(data){
     let i;
-    let interval = 200;
-    let arrowLength = 0.00001;
+    let interval = 500;
+    let arrowLength = 0.00002;
     let arrows = [];
+    let coord = [];
+    let times = [];
     for(i = 0; i < data.log.azimuth.length; i += interval){
         let coordinates = L.latLng(data.log.gps.latitude[i], data.log.gps.longitude[i]);
         let rotatedCoordinates = L.latLng(
@@ -117,12 +120,19 @@ function updateArrows(data){
             data.log.gps.longitude[i] + arrowLength * Math.sin(Math.PI / 180 * (data.log.azimuth[i]))
         );
         let arrow = L.polyline(
-            [coordinates, rotatedCoordinates]
+            [coordinates, rotatedCoordinates],
+            {
+                color: "#ffffff"
+            }
         );
-        let root = L.circle(coordinates, {radius: 0.1});
+        let root = L.circle(coordinates, {color: "#ffffff", radius: 0.1});
         arrows.push(arrow);
         arrows.push(root);
+        coord.push(coordinates);
+        times.push(data.log.time[i]);
     }
+    console.log(coord);
+    console.log(times);
     return L.layerGroup(arrows); 
 }
 
