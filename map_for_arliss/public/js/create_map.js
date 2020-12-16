@@ -1,6 +1,6 @@
 // Japan map
 let japanMap = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
-    attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>�n���@�^�C��</a>",
+    attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
     maxZoom: 30,
     maxNativeZoom: 18
 });
@@ -131,8 +131,6 @@ function updateArrows(data){
         coord.push(coordinates);
         times.push(data.log.time[i]);
     }
-    console.log(coord);
-    console.log(times);
     return L.layerGroup(arrows); 
 }
 
