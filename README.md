@@ -1,5 +1,5 @@
 # RouteVisualizer
-## 下準備
+## 実行手順
 1. Node.jsを用意する
 
 https://nodejs.org/ja/download/
